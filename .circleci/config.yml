@@ -19,11 +19,15 @@ jobs:
         - run:
           name: Install dependencies
           command: npm install
-
-        # - save_cache:
-        #     paths:
-        #       - node_modules
-        #     key: va1-dependencies- {{ checksum "package.json"}}
+  three:
+    docker:
+      - image: circleci/node:11.6.0
+      steps:
+        -checkout
+        - save_cache:
+            paths:
+              - node_modules
+            key: va1-dependencies- {{ checksum "package.json"}}
         #
         # - run:
         #     name: test
