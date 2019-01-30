@@ -11,15 +11,15 @@ jobs:
           name: test
           command: echo "no test"
 
-      -run:
-        name: build
-        command: npm run build
+      - run:
+          name: build
+          command: npm run build
 
-      -run:
-        name: Install awscli
-        command: |
-          sudo apt-get install python-pip python-dev
-          sudo pip install awscli
+      - run:
+          name: Install awscli
+          command: |
+            sudo apt-get install python-pip python-dev
+            sudo pip install awscli
 
 #   two:
 #     docker:
