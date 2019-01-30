@@ -7,17 +7,30 @@ jobs:
       - run:
           name: Install dependencies
           command: npm install
+      - run:
+          name: test
+          command: echo "no test"
 
-  two:
-    docker:
-      - image: circleci/node:11.6.0
-    steps:
-      - checkout
-      - run: echo "A more familiar hi"
-      - run: sleep 15
+      -run:
+        name: build
+        command: npm run build
+
+      -run:
+        name: Install awscli
+        command: |
+          sudo apt-get install python-pip python-dev
+          sudo pip install awscli
+
+#   two:
+#     docker:
+#       - image: circleci/node:11.6.0
+#     steps:
+#       - checkout
+#       - run: echo "A more familiar hi"
+#       - run: sleep 15
 workflows:
   version: 2
   one_and_two:
     jobs:
       - one
-      - two
+      
