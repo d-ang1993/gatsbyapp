@@ -10,6 +10,11 @@ jobs:
       - run:
           name: test
           command: echo "no test"
+          
+      - save_cache:
+          key: va1-dependencies-{{ checksum "package.json"}}
+          paths:
+            - node_modules
 
       - run:
           name: build
