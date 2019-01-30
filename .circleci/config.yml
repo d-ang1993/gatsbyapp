@@ -4,10 +4,10 @@ jobs:
     branches:
       only: master
     docker:
-      -image: circleci/node:7.10
+      -image: circleci/node:11.6.0
       steps:
         - checkout
-        - restor_cache:
+        - restore_cache:
           key: dependency-cache-{{ checksum "package.json"}}
           key: v1-dependencies-
 
@@ -33,6 +33,6 @@ jobs:
           command: |
             sudo apt-get install python-pip python-dev
             sudo pip install awscli
-        # - run: 
+        # - run:
         #   name: Deploy to s3
         #   command: aws s3 sync public s3://preview.
