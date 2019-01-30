@@ -1,35 +1,35 @@
-# version: 2
-# jobs:
-#   one:
-#   # build:
-#     # branches:
-#     #   only: master
-#     docker:
-#       - image: circleci/node:7.10
-#       steps:
-#         - checkout
-#         - restore_cache:
-#           key: dependency-cache-{{ checksum "package.json"}}
-#           key: v1-dependencies-
-#   two:
-#     docker:
-#       - image: circleci/node:11.6.0
-#       steps:
-#         -checkout
-#         - run:
-#           name: Install dependencies
-#           command: npm install
-#   three:
-#     docker:
-#       - image: circleci/node:11.6.0
-#       steps:
-#         -checkout
-#         - save_cache:
-#             paths:
-#               - node_modules
-#             key: va1-dependencies- {{ checksum "package.json"}}
-#         #
-#         # - run:
+version: 2
+jobs:
+  one:
+  # build:
+    # branches:
+    #   only: master
+    docker:
+      - image: circleci/node:7.10
+      steps:
+        - checkout
+        - restore_cache:
+          key: dependency-cache-{{ checksum "package.json"}}
+          key: v1-dependencies-
+  two:
+    docker:
+      - image: circleci/node:11.6.0
+      steps:
+        -checkout
+        - run:
+          name: Install dependencies
+          command: npm install
+  three:
+    docker:
+      - image: circleci/node:11.6.0
+      steps:
+        -checkout
+        - save_cache:
+            paths:
+              - node_modules
+            key: va1-dependencies- {{ checksum "package.json"}}
+        #
+        # - run:
         #     name: test
         #     command: echo "no test"
         #
