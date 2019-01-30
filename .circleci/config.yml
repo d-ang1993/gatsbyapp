@@ -1,7 +1,5 @@
 jobs:
-  build:
-    branches:
-      only: master
+  one:
     docker:
       - image: circleci/node:11.6.0
     steps:
@@ -9,14 +7,18 @@ jobs:
       - run:
           name: Install dependencies
           command: npm install
+       - save_cache:
+          paths:
+            - node_modules
+          key: va1-dependencies-{{ checksum "package.json"}} 
 
-      two:
-        docker:
-          - image: circleci/node:11.6.0
-        steps:
-          - checkout
-          - run: echo "A more familiar hi"
-          - run: sleep 15
+  two:
+    docker:
+      - image: circleci/node:11.6.0
+    steps:
+      - checkout
+      - run: echo "A more familiar hi"
+      - run: sleep 15
 workflows:
   version: 2
   one_and_two:
