@@ -2,13 +2,13 @@ jobs:
   build:
     branches:
       only: master
-        docker:
-          - image: circleci/node:11.6.0
-        steps:
-          - checkout
-          - run:
-              name: Install dependencies
-              command: npm install
+    docker:
+      - image: circleci/node:11.6.0
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm install
 
       two:
         docker:
