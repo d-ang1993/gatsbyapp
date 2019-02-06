@@ -18,8 +18,8 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        <Header siteTitle="Daniel" />
+        <div className="layout_header"
           style={{
             margin: `0 auto`,
             maxWidth: 960,

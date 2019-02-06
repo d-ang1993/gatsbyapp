@@ -6,6 +6,7 @@ html {
 body {
   margin: 0;
   box-sizing: border-box;
+  display: grid;
 }
 article,
 aside,
@@ -537,9 +538,9 @@ li > ul {
 blockquote *:last-child {
   margin-bottom: 0;
 }
-li *:last-child {
+/* li *:last-child {
   margin-bottom: 0;
-}
+} */
 p *:last-child {
   margin-bottom: 0;
 }
