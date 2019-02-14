@@ -22,26 +22,34 @@ const BlogPost = ({node}) => {
   // const
   // const url = `/blog/${node.slug}`
   return (
-    <li>
+  // <div className="list-items">
+    <div>
       <Link to = {node.slug}> {node.title}</Link>
       <img src= {node.heroImage.resize.src} alt="double it!" />
-      <div> {node.body.childMarkdownRemark.excerpt} </div>
+      <div className="img-text"> {node.body.childMarkdownRemark.excerpt} </div>
       <br/>
-      <div> {node.publishDate} </div>
+      {/* <div> {node.publishDate} </div> */}
       <div>{console.log(node)}</div>
       {/* <div>{process.env.CONTENTFUL_SPACE_ID}</div> */}
-    </li>
+    </div>
+
+  // </div>
 
   )
 }
 
 const IndexPage = ({data}) => (
-  <Layout>
+  <Layout >
+    <div className="">
+
+    </div>
     {/* <img className="imgthis" src={data.allContentfulBlogPost.edges[0].node.heroImage.resize.src} alt="double it!" /> */}
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <ul className="blogpost">
-      {data.allContentfulBlogPost.edges.map((edge, id)=> <BlogPost node = {edge.node} key = {id} id = {id} />)}
-    </ul>
+    <div className="post-container">
+      <ul className="blogpost">
+        {data.allContentfulBlogPost.edges.map((edge, id)=> <li><BlogPost node = {edge.node} key = {id} id = {id} /></li>)}
+      </ul>
+    </div>
     {/* {console.log(data.allContentfulBlogPost.edges[0].node.heroImage)} */}
   </Layout>
 )
@@ -67,7 +75,7 @@ export const pageQuery = graphql`
             }
           }
           heroImage {
-           resize(width: 300, height: 300) {
+           resize(width: 300, height: 250) {
              src
            }
           }

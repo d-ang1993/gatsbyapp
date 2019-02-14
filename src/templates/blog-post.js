@@ -9,10 +9,13 @@ class BlogPostTemplate extends React.Component {
       body
     } = this.props.data.contentfulBlogPost
     return (
-      <Layout>
-        <h1> Bogus { title } </h1>
-        <div dangerouslySetInnerHTML = {{__html: body.childMarkdownRemark.html}} />
-      </Layout>
+      <div>
+        <Layout>
+          <h1 className="blog-title">  { title } </h1>
+          <div dangerouslySetInnerHTML = {{__html: body.childMarkdownRemark.html}} />
+
+        </Layout>
+      </div>
     )
   }
 }

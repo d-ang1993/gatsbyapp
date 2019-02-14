@@ -496,24 +496,67 @@ address {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
 b {
   font-weight: bold;
 }
 strong {
   font-weight: bold;
 }
+
 dt {
   font-weight: bold;
 }
+
 th {
   font-weight: bold;
+}
+
+.post-container {
+  width: 100%;
+  margin: auto 0;
+  /* background-color: red; */
+
+}
+
+.blogpost {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.blog-title {
+  color: red;
 }
 
 ul.blogpost li {
   display: inline-block;
   width: 33.33%;
-  /* margin: 0 0 2.5% 2.5%; */
   padding: 20px;
+  margin: auto 0;
+  list-style: none;
+}
+
+ul.blogpost li div{
+
+  margin: auto 0;
+}
+
+ul.blogpost li a{
+  display: inline-block;
+}
+
+ul.blogpost div img {
+  display: block;
+  margin: auto;
+  /* width: 100%; */
+}
+
+ul.blogpost div .img-text {
+  width: 300px;
+  display: inline-block;
+  text-align: left;
 }
 
 li {
@@ -538,9 +581,9 @@ li > ul {
 blockquote *:last-child {
   margin-bottom: 0;
 }
-/* li *:last-child {
+ li *:last-child {
   margin-bottom: 0;
-} */
+}
 p *:last-child {
   margin-bottom: 0;
 }
@@ -551,6 +594,7 @@ code {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
+  line-height: 1.45rem;
 kbd {
   font-size: 0.85rem;
   line-height: 1.45rem;

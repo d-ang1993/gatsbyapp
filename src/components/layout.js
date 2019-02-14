@@ -19,14 +19,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle="Daniel" />
-        <div className="layout_header"
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <div className="layout_header">
           {children}
           <footer>
             © {new Date().getFullYear()}, Built with
