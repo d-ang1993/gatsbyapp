@@ -1,0 +1,52 @@
+  *{
+  box-sizing: border-box;
+}
+
+.text-content-div {
+  display:block;
+  width: 75%;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+}
+
+.text-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogpost {
+  height: 100%;
+}
+
+ul.blogpost li {
+  width: 33.33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-post-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.container{
+  /* background-color: red; */
+  height: 50%;
+  text-align: center;
+}
+.box {
+  background-color: rgb(105, 182, 242);
+  height: 30px;
+  width: 40px;
+  transition: transform 0.5s linear;
+}
+
+.container:hover .box {
+  transform: translateX(300px);
+}

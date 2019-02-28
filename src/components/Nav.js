@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.css'
-import yeeti from '../images/yeeti.png'
+// import yeeti from '../images/yeeti.png'
 
 class Nav extends React.Component {
   render(){

@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.picture-container {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9)), url('../images/plant.jpg');
+  background-position: 85% 55%;
+  height: 100%;
+  display: fixed;
+}
+.plant-image{
+  grid-column-start: 1;
+}
+
+.content-container{
+  grid-column-start: 2;
+}

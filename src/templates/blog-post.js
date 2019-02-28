@@ -1,6 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import Image from '../components/image'
+import './display.css'
+import plant from '../images/plant.jpg'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -9,12 +12,14 @@ class BlogPostTemplate extends React.Component {
       body
     } = this.props.data.contentfulBlogPost
     return (
-      <div>
-        <Layout>
+      <div className="container">
+        <div className="picture-container">
+          <img className="plant-image" src={plant}/>
+        </div>
+        <div className="content">
           <h1 className="blog-title">  { title } </h1>
           <div dangerouslySetInnerHTML = {{__html: body.childMarkdownRemark.html}} />
-
-        </Layout>
+        </div>
       </div>
     )
   }

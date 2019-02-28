@@ -11,7 +11,7 @@
   position: absolute;
   width: 100%;
   top: 50%;
-  transform:translateY(-100%);
+  transform:translateY(-50%);
   color: white;
   text-align: center;
 
