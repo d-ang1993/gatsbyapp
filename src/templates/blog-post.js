@@ -6,19 +6,37 @@ import './display.css'
 import plant from '../images/plant.jpg'
 
 class BlogPostTemplate extends React.Component {
+  constructor(props){
+    super(props)
+
+    this.state={
+      currentScrollHeight: "",
+
+    }
+    this.componentDidMount = this.componentDidMount.bind(this)
+  }
+
+  componentDidMount () {
+    window.onscroll = () => {
+      this.setState({
+        currentScrollHeight: window.scrollY
+      })
+    }
+    console.log(window.scrollY)
+  }
   render() {
-    const {
-      title,
-      body
-    } = this.props.data.contentfulBlogPost
+    const { title, body } = this.props.data.contentfulBlogPost
     return (
       <div className="container">
+
         <div className="picture-container">
-          <img className="plant-image" src={plant}/>
+          <img className="plant-image" src={plant} />
         </div>
         <div className="content">
-          <h1 className="blog-title">  { title } </h1>
-          <div dangerouslySetInnerHTML = {{__html: body.childMarkdownRemark.html}} />
+          <h1 className="blog-title"> {} </h1>
+          <div
+            dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }}
+          />
         </div>
       </div>
     )

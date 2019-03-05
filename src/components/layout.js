@@ -21,6 +21,7 @@ const Layout = ({ children }) => (
         <Nav siteTitle="Daniel"/>
 
         <div className="layout_header">
+      
           {children}
           <footer>
             © {new Date().getFullYear()}, Built with

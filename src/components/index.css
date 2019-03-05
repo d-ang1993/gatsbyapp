@@ -1,38 +1,22 @@
   *{
   box-sizing: border-box;
+
 }
 
 .text-content-div {
   display:block;
-  width: 75%;
+  max-width: 60%;
   height: 500px;
-  border: 1px solid black;
   margin: auto;
   position: relative;
-}
-
-.text-content {
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.blogpost {
-  height: 100%;
-}
+.text-content {
+  height: 50%;
 
-ul.blogpost li {
-  width: 33.33%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.blog-post-date {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .container{
@@ -40,6 +24,7 @@ ul.blogpost li {
   height: 50%;
   text-align: center;
 }
+
 .box {
   background-color: rgb(105, 182, 242);
   height: 30px;
@@ -49,4 +34,70 @@ ul.blogpost li {
 
 .container:hover .box {
   transform: translateX(300px);
+}
+
+.blogpost-container {
+  width: 49%;
+  display:inline-block;
+  padding: 0 10px;
+}
+.blogpost-content {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+.blogpost-image {
+  width: 100%;
+  z-index: -1;
+  transition: .15s ease-in-out ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blogpost-content:hover .blogpost-image {
+   opacity: 0.7;
+}
+
+.content-block {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding: 20px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.content-block-title{
+  color: rgb(45, 45, 45);
+  text-transform: none;
+  font-size: 1rem;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.content-block-description{
+  color: rgb(45, 45, 45);
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.blogpost {
+  height: 100%;
+}
+
+ul.blogpost li {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  padding-bottom: 20px;
+
+}
+
+.blog-post-date {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }

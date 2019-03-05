@@ -9,6 +9,10 @@
 
 .navbar-slogan {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
   width: 100%;
   top: 50%;
   transform:translateY(-50%);
@@ -19,6 +23,61 @@
 
 .navbar-slogan h2 {
   display: inline-block;
-  margin: 0 auto;
   font-size: 40px;
+}
+
+h2 .div-up {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  transition: transform 0.5s linear;
+}
+
+.navbar-slogan:hover .div-up {
+  transform: translateY(50px);
+}
+
+h2 .div-down {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  transition: transform 0.5s linear;
+}
+
+.navbar-slogan:hover .div-down {
+  transform: translateY(-50px);
+}
+.move{
+  position: absolute;
+
+}
+.circle1 {
+  position: absolute;
+
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  margin-bottom: 2px;
+  border-radius: 50%;
+  transition: transform 0.5s linear;
+}
+
+.move:hover .circle1 {
+  transform: translateY(-80px) translateX(80px);
+}
+.circle2 {
+  position: absolute;
+
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  margin-bottom: 2px;
+  border-radius: 50%;
+}
+.circle3 {
+  position: absolute;
+
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  margin-bottom: 2px;
+  border-radius: 50%;
 }
