@@ -15,7 +15,7 @@ const BlogPost = props => {
     <div className="blogpost-container">
       <Link to={props.node.slug}>
       <li>
-        
+
         <div className="blogpost-content">
           <img
             className="blogpost-image"
