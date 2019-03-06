@@ -3,6 +3,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .text-content-div {
   display:block;
   max-width: 60%;

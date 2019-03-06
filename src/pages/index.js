@@ -29,7 +29,7 @@ const BlogPost = props => {
           </div>
         </div>
       </li>
-      < /Link>
+      </Link>
     </div>
   )
 }
@@ -38,12 +38,12 @@ const IndexPage = ({ data }) => (
   <div className="content-page">
     <Header />
     {/* <Layout/> */}
-    <div className="text-content-div">
+    <div className="text-content-div" id="portfolio">
       <div className="text-content">
         <div className="container">
           <h3>WHO WE ARE</h3>
           <h1>TELL THE WORLD ABOUT YOURSELF</h1>
-          <p>
+          <p id="middle">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation

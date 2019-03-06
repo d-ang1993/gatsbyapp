@@ -1,0 +1,142 @@
+$sky-color: #1b2735;
+$night-color: #090a0f;
+
+@function multiple-box-shadow($n) {
+  $value: (random(2000) + px) (random(2000) + px) #fff;
+  @for $i from 2 through $n {
+    $value: $value, (random(2000) + px) (random(2000) + px) #fff;
+  }
+  @return $value;
+}
+
+$shadow-small: multiple-box-shadow(100);
+$shadow-medium: multiple-box-shadow(75);
+$shadow-large: multiple-box-shadow(50);
+
+.background-image {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  border: 1px solid black;
+  background: linear-gradient($sky-color 0%, $night-color 90%);
+  background-position: center;
+}
+
+.navbar-slogan {
+  position: absolute;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  height: 25%;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: center;
+}
+
+.navbar-slogan h2 {
+  display: inline-block;
+  font-size: 40px;
+}
+
+h2 .div-up {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  transition: transform 0.5s linear;
+}
+
+.navbar-slogan:hover .div-up {
+  transform: translateY(50px);
+}
+
+h2 .div-down {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  transition: transform 0.5s linear;
+}
+
+.navbar-slogan:hover .div-down {
+  transform: translateY(-50px);
+}
+.move {
+  position: absolute;
+}
+
+.stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 5px 10px #fff;
+  // animation: animStar 50s linear infinite;
+  box-shadow: $shadow-small;
+}
+
+.background-image:hover .stars {
+  animation: animStar 50s ease-out;
+}
+
+.stars:after {
+  content: '';
+  position: absolute;
+  top: 2000px;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadow-small;
+}
+
+.stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 5px 10px #fff;
+  // animation: animStar 50s ease-out infinite;
+  box-shadow: $shadow-medium;
+}
+
+.background-image:hover .stars2 {
+  animation: animStar 50s ease-out;
+}
+
+.stars2:after {
+  content: '';
+  position: absolute;
+  top: 2000px;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadow-medium;
+}
+
+.stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 5px 10px #fff;
+  // animation: animStar 50s ease-out infinite;
+  box-shadow: $shadow-large;
+}
+
+.background-image:hover .stars3 {
+  animation: animStar 50s ease-out;
+}
+
+.stars3:after {
+  content: '';
+  position: absolute;
+  top: 2000px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadow-large;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
