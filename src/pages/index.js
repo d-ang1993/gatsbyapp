@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import '../components/header.css'
 import Header from '../components/Header'
 import '../components/index.css'
+import snowman from '../images/snowman.png'
 
 // import BlogPost from './page-2'
 
@@ -41,21 +42,20 @@ const IndexPage = ({ data }) => (
     <div className="text-content-div" id="portfolio">
       <div className="text-content">
         <div className="container">
-          <h3>WHO WE ARE</h3>
-          <h1>TELL THE WORLD ABOUT YOURSELF</h1>
+          <h3>Who am I?</h3>
+          <h1>My name is Daniel and I'm a Web Developer</h1>
           <p id="middle">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-            velit esse molestie consequat, vel illum dolore eu feugiat nulla
-            facilisis at vero eros et accumsan.
+            I know a picture means 1000 words so i won't quite explain what I'm doing in that picture...
+            But this snowman was built through procrasination and a beautiful snowfall. Fast-forward a few hours
+            after this picture was taken, I somehow gained popularity and became the "snow-man" guy for a day or two.
+
+            I'm someone who loves change and I really love to pursue
           </p>
+          <img className="snowman" src={snowman} alt="snowman!"/>
         </div>
       </div>
     </div>
-    <div className="text-content-div">
+    <div className="blog-content-div">
       <ul className="blogpost">
         {data.allContentfulBlogPost.edges.map((edge, id) => (
           <BlogPost key={id} node={edge.node} key={id} id={id} />

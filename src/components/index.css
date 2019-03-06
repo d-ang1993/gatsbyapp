@@ -10,7 +10,7 @@ html {
 .text-content-div {
   display:block;
   max-width: 60%;
-  height: 500px;
+  height: 1000px;
   margin: auto;
   position: relative;
   display: flex;
@@ -18,9 +18,24 @@ html {
   justify-content: center;
 }
 
+.blog-content-div {
+  display: block;
+  width: 60%;
+  height: 1000px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snowman {
+  height: 200px;
+  width: 200px;
+}
+
 .text-content {
   height: 50%;
-
 }
 
 .container{

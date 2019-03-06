@@ -15,13 +15,12 @@ class Header extends React.Component {
       <div className="background-image">
         <Nav />
         <div className="navbar-slogan">
-          <h2>
-            <div className="div-up">Yeti</div> this{' '}
-            <div className="div-down">and</div> that{' '}
-            <div className="div-up">..!</div>
-          </h2>
+          <h1>
+            <h1>Hi. My name is <span>Daniel</span></h1>
+            <h1><span>Venture</span> below and get to know me more!</h1>
+          </h1>
           <button className="header-button" onClick={this.scrollView}>
-            Click Me!
+            View More!
           </button>
         </div>
         <div className="move">

@@ -4,12 +4,12 @@
 
 .navbar {
   /* color: white; */
-  background-color: #181818;
+  /* background-color: #181818; */
   z-index: 3;
   /* border-bottom: 1px solid rgb(255, 255, 255, 0.2); */
   /* 1px solid #08fdd8 */
   width: 100%;
-  height: 60px;
+  height: 90px;
 
 }
 
@@ -17,6 +17,10 @@
   height: 100%;
   width: 100%;
 } */
+
+span {
+  color: #E31B6D;
+}
 
 .navbar-logo-container {
   display: inline-block;
@@ -31,7 +35,7 @@
 div .navbar-logo-container h1 {
   font-size: 18px;
   margin: 0;
-  color:  #08fdd8;
+  color:  #FFF;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -56,7 +60,7 @@ div .navbar ul {
 div .navbar ul li {
   display: inline-block;
   border-bottom: 0px solid #08fdd8;
-  color: #08fdd8;
+  color: #FFF;
   padding: 0 20px;
   margin: 0;
   transition: all 0.5s;
@@ -65,5 +69,5 @@ div .navbar ul li {
 }
 
 div .navbar ul li:hover {
-  color: white;
+  color: #08fdd8;
 }
