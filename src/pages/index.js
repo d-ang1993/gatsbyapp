@@ -118,24 +118,24 @@ const IndexPage = ({ data }) => (
             <Box img={snowman} />
           </div>
             <div className="container-skill">
-              <div>
-                <DiPostgresql size={100}/>
+              <div className="skill-stack">
+                <DiPostgresql size={100} color="#090a0f" className="skill-stack-icon"/>
                 <h1>Postgresql</h1>
               </div>
-              <div>
-                <DiCss3Full size={100}/>
+              <div className="skill-stack">
+                <DiCss3Full size={100} color="#090a0f" className="skill-stack-icon"/>
                 <h1>CSS</h1>
               </div>
-              <div>
-                <DiRuby size={100} />
+              <div className="skill-stack">
+                <DiRuby size={100} color="#090a0f" className="skill-stack-icon" />
                 <h1>Ruby</h1>
               </div>
-              <div>
-                <DiJavascript1 size={100}/>
+              <div className="skill-stack">
+                <DiJavascript1 size={100} color="#090a0f" className="skill-stack-icon"/>
                 <h1>Javascript</h1>
               </div>
-              <div>
-                <DiReact size={100}/>
+              <div className="skill-stack">
+                <DiReact size={100} color="#090a0f" className="skill-stack-icon"/>
                 <h1>React</h1>
               </div>
 

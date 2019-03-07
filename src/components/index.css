@@ -32,6 +32,7 @@ html {
   text-align: center;
   margin-top: 40px;
   color: #090a0f;
+  text-transform: uppercase;
   /* background-color: red; */
 }
 
@@ -146,6 +147,7 @@ div #hexagon {
   width: 60%;
   margin: auto;
   padding-left: 100px;
+  padding-bottom: 24px;
   /* background-color: yellow; */
 }
 
@@ -201,6 +203,7 @@ div #hexagon {
   transform: translateX(300px);
 }
 
+/*Skill Container is divided into 5 columns, and icons are taken from react-icon*/
 .container-skill {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -208,7 +211,14 @@ div #hexagon {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
+  padding-bottom: 20px;
 }
+
+.skill-stack {
+  padding-bottom: 50px;
+}
+
+
 
 /* .container-skill-title {
   margin: auto;
