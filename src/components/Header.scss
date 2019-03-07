@@ -20,6 +20,7 @@ $shadow-large: multiple-box-shadow(50);
   border: 1px solid black;
   background: linear-gradient($sky-color 0%, $night-color 90%);
   background-position: center;
+
 }
 
 .navbar-slogan {
@@ -77,14 +78,15 @@ h2 .div-down {
 //   background-color: #E31B6D;
 // }
 .arrow {
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 40px solid #E31B6D;
+  // width: 0;
+  // height: 0;
+  // border-left: 30px solid transparent;
+  // border-right: 30px solid transparent;
+  // border-top: 40px solid #E31B6D;
   position: absolute;
   bottom: 30px;
   right: 48%;
+  animation: bounce 2s infinite;
 }
 
 //////////////////////////////////////////////////////////
@@ -93,7 +95,7 @@ h2 .div-down {
 // }
 
 span {
-  color: #E31B6D;
+  color: #e31b6d;
 }
 
 .move {
@@ -176,14 +178,4 @@ span {
   to {
     transform: translateY(-2000px);
   }
-}
-
-@keyframes(bounce) {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-30);}
-	60% {transform: translateY(-15);}
-}
-
-.bounce {
-  animation: bounce 2s infinite;
 }

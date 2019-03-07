@@ -3,7 +3,7 @@ import nature from '../images/nature.jpg'
 import './Header.scss'
 import Nav from './Nav'
 import { IconContext } from 'react-icons'
-import { IoIosArrowRoundDown } from 'react-icons/io'
+import { FaAngleDown } from 'react-icons/fa'
 
 class Header extends React.Component {
   scrollView = e => {
@@ -30,7 +30,9 @@ class Header extends React.Component {
             View More!
           </button> */}
         </div>
-        <div className="arrow bounce" onMouseOver={this.scrollView} />
+        <div className="arrow bounce" onMouseOver={this.scrollView}>
+          <FaAngleDown size={100} color='#E31B6D'/>
+        </div>
 
         <div className="move">
           <div className="stars" />

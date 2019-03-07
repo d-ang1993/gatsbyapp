@@ -6,16 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* .text-content-div {
-  display:block;
-  max-width: 60%;
-  height: 1000px;
-  margin: auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+/*Container that holds everything after the hero*/
 
 .text-content-div {
   height: 1000px;
@@ -23,12 +14,14 @@ html {
   margin: auto;
 }
 
+/*Container that holds the about section (built with grid)*/
+
 .container {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 0.5fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 2fr 1fr;
 }
 
 .container-title {
@@ -36,12 +29,55 @@ html {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  text-align: center;
+  margin-top: 40px;
+  color: #090a0f;
   /* background-color: red; */
+}
+
+.container-title .title-line {
+  width: 5%;
+  border-bottom: 5px solid rgb(227,27,109,0.9);
+  margin: auto;
+  transition: 0.5s;
+
+}
+
+.container-title:hover .title-line  {
+  width: 10%;
+}
+
+/* Container Attributes Pictures that describe myself!! */
+
+.container-attributes {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  /* background-color: blue; */
 
+}
+.container-attributes ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  height: 100%;
+
+
+}
+.container-attributes ul li {
+  display: inline-block;
+  padding: 0 150px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  position: relative;
+
+}
 
 /* HEXAON SHAPE https://css-tricks.com/the-shapes-of-css/ */
 
@@ -78,40 +114,71 @@ div #hexagon {
   position: relative;
 }
 
-/* Container Attributes That Describe Myself/ */
+/* CLOUD SHAPE https://react-icons.netlify.com/#/icons/gi */
+/* The icons from this website only accepts a fixed size ~ */
 
-.container-attributes {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  /* background-color: blue; */
+.container-icon-case {
+  height: 100%;
+  width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+.attribute-case {
+  position: absolute;
 }
- .container-attributes ul {
-  margin: 0;
+
+.attribute {
+  position: absolute;
+  bottom: 50px;
 }
-.container-attributes ul li {
-  display: inline-block;
-  padding: 0 100px;
-  text-align: center;
-}
+
+/*Container that holds a description about me ;) keke */
 
 .container-description {
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  /* background-color: yellow; */
   text-align: center;
+  width: 60%;
+  margin: auto;
+  padding-left: 100px;
+  /* background-color: yellow; */
 }
+
+.container-description-content h1{
+  margin: 0;
+  color: #090a0f;
+  font-family: Ubuntu;
+}
+.container-description-content h1{
+  color: #090a0f;
+}
+
+.container-description-content p{
+  text-transform: none;
+  color: #090a0f;
+  font-family: Ubuntu;
+}
+
+/**/
 .content-div {
 }
 
 .box-image {
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: auto 0;
+}
+
+.box-component {
+  /* margin: auto; */
 }
 
 .snowman {
@@ -125,14 +192,28 @@ div #hexagon {
 
 .box {
   background-color: rgb(105, 182, 242);
-  height: 30px;
-  width: 40px;
+  /* height: 30px;
+  width: 40px; */
   transition: transform 0.5s linear;
 }
 
 .container:hover .box {
   transform: translateX(300px);
 }
+
+.container-skill {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-transform: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+/* .container-skill-title {
+  margin: auto;
+} */
+
 
 .blog-content-div {
   display: block;

@@ -4,11 +4,20 @@ import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import '../components/header.css'
 import Header from '../components/Header'
+import AboutMe from '../components/AboutMe'
 import Box from '../components/Box'
 import '../components/index.css'
 import snowman from '../images/snowman.png'
-import { FaBeer } from 'react-icons/fa'
+import { GiBlackBelt } from 'react-icons/gi'
 import { IoIosBug } from 'react-icons/io'
+import { MdCloud } from 'react-icons/md'
+import { GiPumpkinMask } from 'react-icons/gi'
+import { GiGroundSprout } from 'react-icons/gi'
+import { DiReact } from 'react-icons/di'
+import { DiRuby } from 'react-icons/di'
+import { DiJavascript1 } from 'react-icons/di'
+import { DiCss3Full } from 'react-icons/di'
+import { DiPostgresql } from 'react-icons/di'
 
 // import BlogPost from './page-2'
 
@@ -42,56 +51,106 @@ const BlogPost = props => {
 const IndexPage = ({ data }) => (
   <div className="content-page">
     <Header />
-    {/* <Layout/> */}
-    <div className="text-content-div" id="portfolio">
-      <div className="container">
-        <div className="container-title">
-          <h1>About</h1>
-        </div>
-        <div className="container-attributes">
-          <ul>
-            <li>
-              <div id="hexagon">
-                <IoIosBug size={50} color="red" />
-              </div>
-            </li>
-            <li>
-              <div id="hexagon">
-                <IoIosBug size={50} color="red" />
-              </div>
-            </li>
-            <li>
-              <div id="hexagon">
-                <IoIosBug size={50} color="red" />
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="container-description">
-          <h1>My name is Daniel and I'm a Web Developer</h1>
-          <p>
-            I know a picture means 1000 words so i won't quite explain what I'm
-            doing in that picture... But this snowman was built through
-            procrasination and a beautiful snowfall. Fast-forward a few hours
-            after this picture was taken, I somehow gained popularity and became
-            the "snow-man" guy for a day or two. I'm someone who loves change
-            and I really love to pursue
-          </p>
-        </div>
+    <Layout>
+      <div className="text-content-div" id="portfolio">
+        <div className="container">
+          <div className="container-title">
+            <h1>About</h1>
+            <div className="title-line" />
+          </div>
+          <div className="container-attributes">
+            <ul>
+              <li>
+                <div className="container-icon-case">
+                  <MdCloud
+                    className="attribute-case"
+                    size={180}
+                    color="#e31b6d"
+                  />
+                  <GiBlackBelt className="attribute" size={75} color="white" />
+                </div>
+              </li>
+              <li>
+                <div className="container-icon-case">
+                  <MdCloud
+                    className="attribute-case"
+                    size={180}
+                    color="#e31b6d"
+                  />
+                  <GiPumpkinMask
+                    className="attribute"
+                    size={80}
+                    color="white"
+                  />
+                </div>
+              </li>
+              <li>
+                <div className="container-icon-case">
+                  <MdCloud
+                    className="attribute-case"
+                    size={180}
+                    color="#e31b6d"
+                  />
+                  <IoIosBug className="attribute" size={80} color="white" />
+                </div>
+              </li>
 
-        {/* <img className="snowman" src={snowman} alt="snowman!"/> */}
-        <div className="box-image">
-          <Box img={snowman} />
+              <li>
+                <div className="container-icon-case">
+                  <MdCloud
+                    className="attribute-case"
+                    size={180}
+                    color="#e31b6d"
+                  />
+                  <GiGroundSprout
+                    className="attribute"
+                    size={80}
+                    color="white"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="container-description">
+            <AboutMe />
+          </div>
+          <div className="box-image">
+            <Box img={snowman} />
+          </div>
+            <div className="container-skill">
+              <div>
+                <DiPostgresql size={100}/>
+                <h1>Postgresql</h1>
+              </div>
+              <div>
+                <DiCss3Full size={100}/>
+                <h1>CSS</h1>
+              </div>
+              <div>
+                <DiRuby size={100} />
+                <h1>Ruby</h1>
+              </div>
+              <div>
+                <DiJavascript1 size={100}/>
+                <h1>Javascript</h1>
+              </div>
+              <div>
+                <DiReact size={100}/>
+                <h1>React</h1>
+              </div>
+
+            </div>
         </div>
       </div>
-    </div>
-    <div className="blog-content-div">
-      <ul className="blogpost">
-        {data.allContentfulBlogPost.edges.map((edge, id) => (
-          <BlogPost key={id} node={edge.node} key={id} id={id} />
-        ))}
-      </ul>
-    </div>
+
+      <div className="blog-content-div">
+        <ul className="blogpost">
+          {data.allContentfulBlogPost.edges.map((edge, id) => (
+            <BlogPost key={id} node={edge.node} key={id} id={id} />
+          ))}
+        </ul>
+      </div>
+    </Layout>
   </div>
 )
 

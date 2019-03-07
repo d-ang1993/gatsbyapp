@@ -1,5 +1,6 @@
 import React from 'react'
 import './Box.css'
+import { FaUserAstronaut } from 'react-icons/fa'
 
 class Box extends React.Component {
   constructor(props) {
@@ -27,13 +28,22 @@ class Box extends React.Component {
 
   render() {
     const { img } = this.props
+
     return (
       <div className="box-component">
         {this.state.open === false ? (
-          <h1
-            className="box-content"
-            onClick={this.boxOpenClose}
-          >Click me! </h1>
+
+            <div>
+              <FaUserAstronaut
+                size={200}
+                className="box-content"
+                onClick={this.boxOpenClose}
+              />
+              <h1>Click Me!</h1>
+
+
+            </div>
+
         ) : (
           <img
             className="box-content-open"

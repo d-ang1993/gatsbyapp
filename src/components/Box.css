@@ -1,15 +1,16 @@
 .box-content {
-
   grid-column-start: 1;
   margin: auto;
+  color: #090a0f;
+  transition: 0.5s;
+}
+
+.box-image:hover .box-content{
+  color: #1abc9c;
 }
 
 .box-content-open{
   width: 300px;
   height: 300px;
-
-}
-
-.box-component {
-  height: 20px;
+  border-radius: 50%;
 }
