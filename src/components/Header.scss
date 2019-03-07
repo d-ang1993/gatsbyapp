@@ -27,15 +27,14 @@ $shadow-large: multiple-box-shadow(50);
   // display: flex;
   // align-items: center;
   // justify-content: center;
-  left: 10%;
-  height: 25%;
+  left: 20%;
+  height: 35%;
   width: 75%;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   color: white;
   text-align: left;
 }
-
 
 .navbar-slogan h2 {
   // display: inline-block;
@@ -58,27 +57,45 @@ h2 .div-down {
   // transition: transform 0.5s linear;
 }
 
-.header-button{
-  display: inline-block;
-  padding: 10px 30px;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 200px;
-  color: #fff;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-  background-color: #c9145e;
-  border: 1px solid #E31B6D;
-  margin-right: 1005px;
-  text-transform: up
+//ADDING A BUTTON!!!!!!!!!
+
+// .header-button{
+//   display: inline-block;
+//   padding: 10px 30px;
+//   font-weight: 300;
+//   text-decoration: none;
+//   border-radius: 200px;
+//   color: #fff;
+//   transition: background-color 0.2s, border 0.2s, color 0.2s;
+//   background-color: #c9145e;
+//   border: 1px solid #E31B6D;
+//   margin-right: 1005px;
+//   text-transform: up
+// }
+//
+// .header-button:hover{
+//   background-color: #E31B6D;
+// }
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 40px solid #E31B6D;
+  position: absolute;
+  bottom: 30px;
+  right: 50%;
 }
 
-.header-button:hover{
-  background-color: #E31B6D;
-}
-
+//////////////////////////////////////////////////////////
 // .navbar-slogan:hover .div-down {
 //   transform: translateY(-50px);
 // }
+
+span {
+  color: #E31B6D;
+}
+
 .move {
   position: absolute;
 }
@@ -159,4 +176,14 @@ h2 .div-down {
   to {
     transform: translateY(-2000px);
   }
+}
+
+@keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30);}
+	60% {transform: translateY(-15);}
+}
+
+.bounce {
+  animation: bounce 2s infinite;
 }
