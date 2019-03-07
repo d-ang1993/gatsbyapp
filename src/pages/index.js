@@ -50,21 +50,21 @@ const IndexPage = ({ data }) => (
         </div>
         <div className="container-attributes">
           <ul>
-            <div>
-              <IoIosBug size={100} />
-            </div>
-            <div>
-              <IoIosBug size={100} />
-            </div>
-            <div>
-              <IoIosBug size={100} />
-            </div>
-            <div>
-              <IoIosBug size={100} />
-            </div>
-            <div>
-              <IoIosBug size={100} />
-            </div>
+            <li>
+              <div id="hexagon">
+                <IoIosBug size={50} color="red" />
+              </div>
+            </li>
+            <li>
+              <div id="hexagon">
+                <IoIosBug size={50} color="red" />
+              </div>
+            </li>
+            <li>
+              <div id="hexagon">
+                <IoIosBug size={50} color="red" />
+              </div>
+            </li>
           </ul>
         </div>
         <div className="container-description">

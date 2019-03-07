@@ -1,6 +1,5 @@
-  *{
+* {
   box-sizing: border-box;
-
 }
 
 html {
@@ -22,8 +21,6 @@ html {
   height: 1000px;
   max-width: 80%;
   margin: auto;
-
-
 }
 
 .container {
@@ -31,53 +28,90 @@ html {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-
+  grid-template-rows: 0.5fr 1fr 3fr;
 }
 
-.container-title{
+.container-title {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container-attributes{
-  grid-column-start:1;
+
+/* HEXAON SHAPE https://css-tricks.com/the-shapes-of-css/ */
+
+#hexagon {
+  width: 100px;
+  height: 55px;
+  background: black;
+  position: relative;
+}
+#hexagon:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid black;
+}
+#hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid black;
+}
+
+div #hexagon {
+  position: relative;
+}
+
+/* Container Attributes That Describe Myself/ */
+
+.container-attributes {
+  grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  background-color: blue;
+  /* background-color: blue; */
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
 }
-.container-attributes ul{
+ .container-attributes ul {
   margin: 0;
 }
-.container-attributes ul div{
+.container-attributes ul li {
   display: inline-block;
-  padding: 0 80px;
+  padding: 0 100px;
+  text-align: center;
 }
+
 .container-description {
-  grid-column-start:2;
+  grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: yellow;
-text-align: center;
+  /* background-color: yellow; */
+  text-align: center;
 }
 .content-div {
-
 }
 
 .box-image {
-
-
 }
 
 .snowman {
@@ -88,7 +122,6 @@ text-align: center;
 .text-content {
   height: 50%;
 }
-
 
 .box {
   background-color: rgb(105, 182, 242);
@@ -113,7 +146,7 @@ text-align: center;
 }
 .blogpost-container {
   width: 49%;
-  display:inline-block;
+  display: inline-block;
   padding: 0 10px;
 }
 .blogpost-content {
@@ -125,12 +158,12 @@ text-align: center;
 .blogpost-image {
   width: 100%;
   z-index: -1;
-  transition: .15s ease-in-out ;
+  transition: 0.15s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blogpost-content:hover .blogpost-image {
-   opacity: 0.7;
+  opacity: 0.7;
 }
 
 .content-block {
@@ -145,7 +178,7 @@ text-align: center;
   overflow: hidden;
 }
 
-.content-block-title{
+.content-block-title {
   color: rgb(45, 45, 45);
   text-transform: none;
   font-size: 1rem;
@@ -153,7 +186,7 @@ text-align: center;
   padding-bottom: 10px;
 }
 
-.content-block-description{
+.content-block-description {
   color: rgb(45, 45, 45);
   text-transform: none;
   font-size: 1rem;
@@ -168,7 +201,6 @@ ul.blogpost li {
   height: 100%;
   /* overflow: hidden; */
   padding-bottom: 20px;
-
 }
 
 .blog-post-date {
