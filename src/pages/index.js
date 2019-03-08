@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 import '../components/header.css'
 import Header from '../components/Header'
 import AboutMe from '../components/AboutMe'
-import Box from '../components/Box'
+import BoxImage from '../components/BoxImage'
 import '../components/index.css'
 import snowman from '../images/snowman.png'
 import { GiBlackBelt } from 'react-icons/gi'
@@ -60,27 +60,27 @@ const IndexPage = ({ data }) => (
           </div>
           <div className="container-attributes">
             <ul>
-              <li>
+              <li className="container-attributes-belt">
                 <div className="container-icon-case">
                   <MdCloud
-                    className="attribute-case"
-                    size={180}
+                    className="attribute-case cloud1"
+                    size={165}
                     color="#e31b6d"
                   />
                   <GiBlackBelt className="attribute" size={75} color="white" />
                 </div>
               </li>
-              <li>
+              <li className="container-attributes-scary">
                 <div className="container-icon-case">
                   <MdCloud
-                    className="attribute-case"
-                    size={180}
+                    className="attribute-case cloud2"
+                    size={165}
                     color="#e31b6d"
                   />
                   <GiPumpkinMask
-                    className="attribute"
+                    className="attribute scary"
                     size={80}
-                    color="white"
+                    // color="white"
                   />
                 </div>
               </li>
@@ -88,7 +88,7 @@ const IndexPage = ({ data }) => (
                 <div className="container-icon-case">
                   <MdCloud
                     className="attribute-case"
-                    size={180}
+                    size={165}
                     color="#e31b6d"
                   />
                   <IoIosBug className="attribute" size={80} color="white" />
@@ -99,7 +99,7 @@ const IndexPage = ({ data }) => (
                 <div className="container-icon-case">
                   <MdCloud
                     className="attribute-case"
-                    size={180}
+                    size={165}
                     color="#e31b6d"
                   />
                   <GiGroundSprout
@@ -115,31 +115,60 @@ const IndexPage = ({ data }) => (
             <AboutMe />
           </div>
           <div className="box-image">
-            <Box img={snowman} />
+            <BoxImage img={snowman} />
           </div>
-            <div className="container-skill">
-              <div className="skill-stack">
-                <DiPostgresql size={100} color="#090a0f" className="skill-stack-icon"/>
-                <h1>Postgresql</h1>
-              </div>
-              <div className="skill-stack">
-                <DiCss3Full size={100} color="#090a0f" className="skill-stack-icon"/>
+          <div className="container-skill">
+            <div className="skill-stack">
+              <div className="skill-stack-content">
+                <DiCss3Full
+                  size={70}
+                  color="#090a0f"
+                  className="skill-stack-icon"
+                />
                 <h1>CSS</h1>
               </div>
-              <div className="skill-stack">
-                <DiRuby size={100} color="#090a0f" className="skill-stack-icon" />
+            </div>
+            <div className="skill-stack">
+              <div className="skill-stack-content">
+                <DiRuby
+                  size={70}
+                  color="#090a0f"
+                  className="skill-stack-icon"
+                />
                 <h1>Ruby</h1>
               </div>
-              <div className="skill-stack">
-                <DiJavascript1 size={100} color="#090a0f" className="skill-stack-icon"/>
+            </div>
+            <div className="skill-stack">
+              <div className="skill-stack-content">
+                <DiJavascript1
+                  size={70}
+                  color="#090a0f"
+                  className="skill-stack-icon"
+                />
                 <h1>Javascript</h1>
               </div>
-              <div className="skill-stack">
-                <DiReact size={100} color="#090a0f" className="skill-stack-icon"/>
+            </div>
+            <div className="skill-stack">
+              <div className="skill-stack-content">
+                <DiReact
+                  size={70}
+                  color="#090a0f"
+                  className="skill-stack-icon"
+                />
                 <h1>React</h1>
               </div>
-
             </div>
+            <div className="skill-stack">
+              <div className="skill-stack-content">
+                <DiPostgresql
+                  size={70}
+                  color="#090a0f"
+                  className="skill-stack-icon"
+                />
+                <h1>Postgresql</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

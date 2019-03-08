@@ -1,8 +1,8 @@
 import React from 'react'
-import './Box.css'
+import './BoxImage.css'
 import { FaUserAstronaut } from 'react-icons/fa'
 
-class Box extends React.Component {
+class BoxImage extends React.Component {
   constructor(props) {
     super(props)
 
@@ -57,4 +57,4 @@ class Box extends React.Component {
   }
 }
 
-export default Box
+export default BoxImage
