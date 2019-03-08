@@ -2,7 +2,7 @@ import React from 'react'
 import './BoxImage.css'
 import { FaUserAstronaut } from 'react-icons/fa'
 
-class BoxImage extends React.Component {
+class IndexAvatar extends React.Component {
   constructor(props) {
     super(props)
 
@@ -30,6 +30,7 @@ class BoxImage extends React.Component {
     const { img } = this.props
 
     return (
+    <div className="box-image">
       <div className="box-component">
         {this.state.open === false ? (
 
@@ -53,8 +54,9 @@ class BoxImage extends React.Component {
           />
         )}
       </div>
+    </div>
     )
   }
 }
 
-export default BoxImage
+export default IndexAvatar

@@ -75,6 +75,11 @@ html {
   position: relative;
 }
 
+.container-icon-case {
+  height: 170px;
+  width: 170px;
+}
+
 .container-attributes-belt {
   transition: 0.5s;
 }

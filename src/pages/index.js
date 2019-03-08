@@ -4,20 +4,9 @@ import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import '../components/header.css'
 import Header from '../components/Header'
-import AboutMe from '../components/AboutMe'
-import BoxImage from '../components/BoxImage'
+import IndexContent from '../components/IndexContent'
 import '../components/index.css'
 import snowman from '../images/snowman.png'
-import { GiBlackBelt } from 'react-icons/gi'
-import { IoIosBug } from 'react-icons/io'
-import { MdCloud } from 'react-icons/md'
-import { GiPumpkinMask } from 'react-icons/gi'
-import { GiGroundSprout } from 'react-icons/gi'
-import { DiReact } from 'react-icons/di'
-import { DiRuby } from 'react-icons/di'
-import { DiJavascript1 } from 'react-icons/di'
-import { DiCss3Full } from 'react-icons/di'
-import { DiPostgresql } from 'react-icons/di'
 
 // import BlogPost from './page-2'
 
@@ -52,125 +41,7 @@ const IndexPage = ({ data }) => (
   <div className="content-page">
     <Header />
     <Layout>
-      <div className="text-content-div" id="portfolio">
-        <div className="container">
-          <div className="container-title">
-            <h1>About</h1>
-            <div className="title-line" />
-          </div>
-          <div className="container-attributes">
-            <ul>
-              <li className="container-attributes-belt">
-                <div className="container-icon-case">
-                  <MdCloud
-                    className="attribute-case cloud1"
-                    size={165}
-                    color="#e31b6d"
-                  />
-                  <GiBlackBelt className="attribute" size={75} color="white" />
-                </div>
-              </li>
-              <li className="container-attributes-scary">
-                <div className="container-icon-case">
-                  <MdCloud
-                    className="attribute-case cloud2"
-                    size={165}
-                    color="#e31b6d"
-                  />
-                  <GiPumpkinMask
-                    className="attribute scary"
-                    size={80}
-                    // color="white"
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="container-icon-case">
-                  <MdCloud
-                    className="attribute-case"
-                    size={165}
-                    color="#e31b6d"
-                  />
-                  <IoIosBug className="attribute" size={80} color="white" />
-                </div>
-              </li>
-
-              <li>
-                <div className="container-icon-case">
-                  <MdCloud
-                    className="attribute-case"
-                    size={165}
-                    color="#e31b6d"
-                  />
-                  <GiGroundSprout
-                    className="attribute"
-                    size={80}
-                    color="white"
-                  />
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="container-description">
-            <AboutMe />
-          </div>
-          <div className="box-image">
-            <BoxImage img={snowman} />
-          </div>
-          <div className="container-skill">
-            <div className="skill-stack">
-              <div className="skill-stack-content">
-                <DiCss3Full
-                  size={70}
-                  color="#090a0f"
-                  className="skill-stack-icon"
-                />
-                <h1>CSS</h1>
-              </div>
-            </div>
-            <div className="skill-stack">
-              <div className="skill-stack-content">
-                <DiRuby
-                  size={70}
-                  color="#090a0f"
-                  className="skill-stack-icon"
-                />
-                <h1>Ruby</h1>
-              </div>
-            </div>
-            <div className="skill-stack">
-              <div className="skill-stack-content">
-                <DiJavascript1
-                  size={70}
-                  color="#090a0f"
-                  className="skill-stack-icon"
-                />
-                <h1>Javascript</h1>
-              </div>
-            </div>
-            <div className="skill-stack">
-              <div className="skill-stack-content">
-                <DiReact
-                  size={70}
-                  color="#090a0f"
-                  className="skill-stack-icon"
-                />
-                <h1>React</h1>
-              </div>
-            </div>
-            <div className="skill-stack">
-              <div className="skill-stack-content">
-                <DiPostgresql
-                  size={70}
-                  color="#090a0f"
-                  className="skill-stack-icon"
-                />
-                <h1>Postgresql</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <IndexContent snowman={snowman}/>
 
       <div className="blog-content-div">
         <ul className="blogpost">
