@@ -9,9 +9,10 @@ html {
 /*Container that holds everything after the hero*/
 
 .text-content-div {
-  height: 1000px;
+  height: 100vh;
   max-width: 80%;
   margin: auto;
+  
 }
 
 /*Container that holds the about section (built with grid)*/
@@ -136,6 +137,7 @@ div #hexagon {
 .container-attributes-belt {
   transition: 0.5s;
 }
+
 .attribute-case {
   transition: 0.5s;
 }

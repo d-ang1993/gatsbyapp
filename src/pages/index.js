@@ -40,9 +40,8 @@ const BlogPost = props => {
 const IndexPage = ({ data }) => (
   <div className="content-page">
     <Header />
-    <Layout>
+    {/* <Layout> */}
       <IndexContent snowman={snowman}/>
-
       <div className="blog-content-div">
         <ul className="blogpost">
           {data.allContentfulBlogPost.edges.map((edge, id) => (
@@ -50,7 +49,7 @@ const IndexPage = ({ data }) => (
           ))}
         </ul>
       </div>
-    </Layout>
+    {/* </Layout> */}
   </div>
 )
 

@@ -12,6 +12,8 @@ class IndexContent extends React.Component {
     this.state = {
       attribute: '',
       open: false,
+      color: false,
+
     }
 
     this.attributesClick = this.attributesClick.bind(this)
@@ -20,12 +22,15 @@ class IndexContent extends React.Component {
   attributesClick(e) {
 
     const target = e.currentTarget.dataset.id
+    const currentTarget = e.currentTarget
 
     this.setState({
-      attribute: target
+      attribute: target,
+      color: true
     })
 
   }
+
 
   render() {
     // console.log(this.state.attribute)

@@ -6,6 +6,53 @@ import { IconContext } from 'react-icons'
 import { FaAngleDown } from 'react-icons/fa'
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {};
+
+    this.handleScroll = this.handleScroll.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
+    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+  }
+
+  handleScroll(e) {
+    this.setState({scroll: window.scrollY});
+    // e.preventDefault()
+    // const nav = document.querySelector('nav')
+    //
+    // const navTop = nav.offsetTop
+    // console.log(navTop)
+    // console.log(window.scrollY)
+
+    // if (window.scrollY >= navTop) {
+    //   this.setState({
+    //     fixedNav: true,
+    //     scroll: window.scrollY
+    //   })
+    // } else if (window.scrollY < navTop){
+    //   this.setState({
+    //     fixedNav: false
+    //   })
+    // }
+
+  }
+
+  componentDidMount(e) {
+    const nav = document.querySelector('nav');
+    this.setState({
+      top: nav.offsetTop,
+      height: nav.offsetHeight,
+    })
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentDidUpdate(e) {
+    // this.state.scroll > this.state.top 
+    // document.body.style.paddingTop = `${this.state.height}px` :
+    //        document.body.style.paddingTop = 0;
+    // console.log(this.state.scroll)
+  }
   scrollView = e => {
     e.preventDefault()
     console.log(e.target)
@@ -13,9 +60,11 @@ class Header extends React.Component {
   }
 
   render() {
+    console.log(this.state)
+
     return (
       <div className="background-image">
-        <Nav />
+        <Nav top={this.state.top} scroll={this.state.scroll}/>
         <div className="navbar-slogan">
           <h1>
             <h1>
@@ -31,7 +80,7 @@ class Header extends React.Component {
           </button> */}
         </div>
         <div className="arrow bounce" onMouseOver={this.scrollView}>
-          <FaAngleDown size={100} color='#E31B6D'/>
+          <FaAngleDown size={100} color="#E31B6D" />
         </div>
 
         <div className="move">
