@@ -10,25 +10,31 @@ class IndexContent extends React.Component {
     super(props)
 
     this.state = {
-      text: '',
-      open: '',
+      attribute: '',
+      open: false,
     }
 
-    // this.descriptionClick = this.descriptionClick.bind(this)
+    this.attributesClick = this.attributesClick.bind(this)
   }
 
-  attributesClick=(e)=> {
-    const target = e.target
-    console.log(target.classList)
+  attributesClick(e) {
+
+    const target = e.currentTarget.dataset.id
+
+    this.setState({
+      attribute: target
+    })
+
   }
 
   render() {
+    // console.log(this.state.attribute)
     return (
       <div className="text-content-div" id="portfolio">
         <div className="container">
           <IndexTitle />
           <IndexAttributes attributesClick={this.attributesClick}/>
-          <IndexDescriptions />
+          <IndexDescriptions attribute={this.state.attribute}/>
           <IndexAvatar img={this.props.snowman} />
           <IndexSkills />
         </div>

@@ -75,26 +75,6 @@ html {
   position: relative;
 }
 
-.container-icon-case {
-  height: 170px;
-  width: 170px;
-}
-
-.container-attributes-belt {
-  transition: 0.5s;
-}
-.attribute-case {
-  transition: 0.5s;
-}
-
-.scary {
-  color: white;
-  transition: 1s ease;
-}
-
-.container-attributes-scary:hover .scary {
-  color: #e67e22;
-}
 
 /* HEXAON SHAPE https://css-tricks.com/the-shapes-of-css/ */
 
@@ -134,6 +114,7 @@ div #hexagon {
 /* CLOUD SHAPE https://react-icons.netlify.com/#/icons/gi */
 /* The icons from this website only accepts a fixed size ~ */
 
+
 .container-icon-case {
   height: 100%;
   width: 100%;
@@ -152,9 +133,26 @@ div #hexagon {
   bottom: 50px;
 }
 
+.container-attributes-belt {
+  transition: 0.5s;
+}
+.attribute-case {
+  transition: 0.5s;
+}
+
+.scary {
+  color: white;
+  transition: 1s ease;
+}
+
+.container-attributes-scary:hover .scary {
+  color: #e67e22;
+}
+
+
 /*Container that holds a description about me ;) keke */
 
-.container-description {
+.container-description-content {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 3;
