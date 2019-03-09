@@ -12,7 +12,7 @@ class Header extends React.Component {
     this.state = {}
 
 
-  handleScroll(e) {
+  handleScroll=(e)=> {
     this.setState({ scroll: window.scrollY })
     // e.preventDefault()
     // const nav = document.querySelector('nav')
