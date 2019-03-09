@@ -4,8 +4,9 @@ import Layout from '../components/layout'
 import '../components/header.css'
 import Header from '../components/Header'
 import IndexContent from '../components/IndexContent'
-import BlogContent from '../components/BlogContent'
+
 import Footer from '../components/Footer'
+import BlogTitle from '../components/BlogTitle'
 import '../components/index.css'
 import snowman from '../images/snowman.png'
 
@@ -43,7 +44,14 @@ const IndexPage = ({ data }) => (
     <Layout>
     {/* <Header /> */}
       <IndexContent snowman={snowman}/>
-      <BlogContent data={data} id="portfolio"/>
+      <div className="blog-content-div" id="portfolio">
+        <BlogTitle/>
+        <ul className="blog-post">
+          {data.allContentfulBlogPost.edges.map((edge, id) => (
+            <BlogPost key={id} node={edge.node} key={id} id={id} />
+          ))}
+        </ul>
+      </div>
     </Layout>
   </div>
 )
