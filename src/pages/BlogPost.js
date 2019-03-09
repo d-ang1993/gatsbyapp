@@ -29,3 +29,30 @@ const BlogPost = props => {
 }
 
 export default BlogPost
+
+export const pageQuery = graphql`
+  query pageQuery {
+    allContentfulBlogPost(
+      filter: { node_locale: { eq: "en-US" } }
+      sort: { fields: [publishDate], order: DESC }
+    ) {
+      edges {
+        node {
+          title
+          slug
+          body {
+            childMarkdownRemark {
+              excerpt
+            }
+          }
+          heroImage {
+            resize(width: 300, height: 300) {
+              src
+            }
+          }
+          publishDate
+        }
+      }
+    }
+  }
+`
