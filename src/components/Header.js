@@ -11,8 +11,8 @@ class Header extends React.Component {
 
     this.state = {}
 
-    this.handleScroll = this.handleScroll.bind(this)
-    this.componentDidMount = this.componentDidMount.bind(this)
+    // this.handleScroll = this.handleScroll.bind(this)
+    // this.componentDidMount = this.componentDidMount.bind(this)
   }
 
   handleScroll(e) {

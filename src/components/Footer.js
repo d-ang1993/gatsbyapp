@@ -11,16 +11,22 @@ class Footer extends React.Component {
         <div className="connect-footer" id="footer">
           <ul>
             <li>
-              <p>LinkedIn</p>
-              <FaLinkedin className="LinkedIn" />
+              <div className="connect-footer-div">
+                <p>LinkedIn</p>
+                <FaLinkedin className="LinkedIn" />
+              </div>
             </li>
             <li>
-              <p>Phone#: (905) 808-5205</p>
-              <FaGhost className="Ghost" />
+              <div className="connect-footer-div">
+                <p>Phone#: (905) 808-5205</p>
+                <FaGhost className="Ghost" />
+              </div>
             </li>
             <li>
-              <p>GitHub</p>
-              <DiGithubBadge className="GitHub" size={20} />
+              <div className="connect-footer-div">
+                <p>GitHub</p>
+                <DiGithubBadge className="GitHub" size={20} />
+              </div>
             </li>
           </ul>
         </div>
@@ -28,7 +34,6 @@ class Footer extends React.Component {
           <p>
             © {new Date().getFullYear()}, Built with{' '}
             <a href="https://www.gatsbyjs.org"> Gatsby</a> by Daniel Ang
-
           </p>
         </div>
       </footer>

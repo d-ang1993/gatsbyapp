@@ -40,11 +40,13 @@ footer {
   margin: auto;
 }
 
+.connect-footer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .connect-footer p {
   padding-right: 5px;
   display: inline-block;
-}
-
-.LinkedIn {
-
+  margin: auto;
 }
