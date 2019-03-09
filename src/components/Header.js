@@ -10,9 +10,9 @@ class Header extends React.Component {
     super(props)
 
     this.state = {}
+  }
 
-
-  handleScroll=(e)=> {
+  handleScroll = e => {
     this.setState({ scroll: window.scrollY })
     // e.preventDefault()
     // const nav = document.querySelector('nav')
@@ -33,7 +33,7 @@ class Header extends React.Component {
     // }
   }
 
-  componentDidMount=(e)=> {
+  componentDidMount = e => {
     const nav = document.querySelector('nav')
     this.setState({
       top: nav.offsetTop,
@@ -42,7 +42,7 @@ class Header extends React.Component {
     window.addEventListener('scroll', this.handleScroll)
   }
 
-  componentDidUpdate=(e)=> {
+  componentDidUpdate = e => {
     // this.state.scroll > this.state.top
     // document.body.style.paddingTop = `${this.state.height}px` :
     //        document.body.style.paddingTop = 0;
