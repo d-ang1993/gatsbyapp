@@ -6,21 +6,14 @@ import './display.css'
 import plant from '../images/plant.jpg'
 
 class BlogPostTemplate extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
-
-    this.state={
-      currentScrollHeight: "",
-
-    }
-    this.componentDidMount = this.componentDidMount.bind(this)
   }
 
   render() {
     const { title, body } = this.props.data.contentfulBlogPost
     return (
       <div className="container">
-
         <div className="picture-container">
           <img className="plant-image" src={plant} />
         </div>
