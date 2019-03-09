@@ -4,6 +4,7 @@ import { IoIosBug } from 'react-icons/io'
 import { MdCloud } from 'react-icons/md'
 import { GiPumpkinMask } from 'react-icons/gi'
 import { GiGroundSprout } from 'react-icons/gi'
+import cloud from '../images/cloud.png'
 
 class IndexAttributes extends React.Component {
   render() {
@@ -11,6 +12,9 @@ class IndexAttributes extends React.Component {
     return (
       <div className="container-attributes">
         <ul>
+          {/* <li>
+            <img src={cloud} className="cloud"/>
+          </li> */}
           <li className="container-attributes-belt">
             <div className="container-icon-case">
               <MdCloud

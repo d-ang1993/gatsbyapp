@@ -154,6 +154,11 @@ div #hexagon {
   transition: 0.5s;
 }
 
+.cloud {
+  height: 100%;
+  width: 100%;
+}
+
 .scary {
   color: white;
   transition: 1s ease;

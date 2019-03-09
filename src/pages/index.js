@@ -10,6 +10,7 @@ import BlogTitle from '../components/BlogTitle'
 import '../components/index.css'
 import snowman from '../images/snowman.png'
 
+
 // import BlogPost from './page-2'
 
 import SEO from '../components/seo'
@@ -40,8 +41,8 @@ const BlogPost = props => {
 }
 
 const IndexPage = ({ data }) => (
+  <Layout>
   <div className="content-page">
-    <Layout>
     {/* <Header /> */}
       <IndexContent snowman={snowman}/>
       <div className="blog-content-div" id="portfolio">
@@ -52,8 +53,8 @@ const IndexPage = ({ data }) => (
           ))}
         </ul>
       </div>
-    </Layout>
   </div>
+</Layout>
 )
 
 export default IndexPage

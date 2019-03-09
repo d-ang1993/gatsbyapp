@@ -50,3 +50,7 @@ footer {
   display: inline-block;
   margin: auto;
 }
+
+.Ghost {
+  size: 400px;
+}
