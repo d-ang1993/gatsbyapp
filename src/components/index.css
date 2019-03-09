@@ -12,7 +12,6 @@ html {
   height: 100vh;
   max-width: 80%;
   margin: auto;
-  
 }
 
 /*Container that holds the about section (built with grid)*/
@@ -23,6 +22,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 2fr 1fr;
+  margin-top: 30px;
 }
 
 .container-title {
@@ -36,12 +36,26 @@ html {
   text-transform: uppercase;
   /* background-color: red; */
 }
+.container-title h1 {
+  margin-top: 50px;
+}
 
 .container-title .title-line {
   width: 5%;
   border-bottom: 5px solid rgb(227, 27, 109, 0.9);
   margin: auto;
   transition: 0.5s;
+}
+.container-title .blog {
+  width: 5%;
+  border-bottom: 5px solid #1abc9c;
+  margin: auto;
+  transition: 0.5s;
+}
+
+#blog-container-title {
+  margin-top: 50px;
+  padding-top: 35px;
 }
 
 .container-title:hover .title-line {
@@ -75,7 +89,6 @@ html {
   height: 100%;
   position: relative;
 }
-
 
 /* HEXAON SHAPE https://css-tricks.com/the-shapes-of-css/ */
 
@@ -115,7 +128,6 @@ div #hexagon {
 /* CLOUD SHAPE https://react-icons.netlify.com/#/icons/gi */
 /* The icons from this website only accepts a fixed size ~ */
 
-
 .container-icon-case {
   height: 100%;
   width: 100%;
@@ -150,7 +162,6 @@ div #hexagon {
 .container-attributes-scary:hover .scary {
   color: #e67e22;
 }
-
 
 /*Container that holds a description about me ;) keke */
 
@@ -210,7 +221,6 @@ div #hexagon {
   height: 50%;
 }
 
-
 /*Skill Container is divided into 5 columns, and icons are taken from react-icon*/
 .container-skill {
   grid-column-start: 1;
@@ -233,30 +243,40 @@ div #hexagon {
 .skill-stack-content {
   margin: 0 auto;
 }
-.skill-stack h1{
+.skill-stack h1 {
   font-size: 1.5em;
   margin: 0;
 }
 
-/* .container-skill-title {
-  margin: auto;
-} */
+/* Start of Blog section!!!! */
 
 .blog-content-div {
   display: block;
-  width: 60%;
-  height: 1000px;
-  margin: auto;
+  width: 75%;
+  height: 100vh;
+  margin: 0 auto;
+  margin-bottom: 300px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+}
+
+ul .blog-post {
+  height: 200px;
+  margin: 0;
 }
 .blogpost-container {
-  width: 49%;
+  margin: 10px;
+  width: 33.33%;
+  margin: auto;
   display: inline-block;
-  padding: 0 10px;
+  padding: 20px;
 }
+.blogpost-container li {
+  list-style-type: none;
+  display: block;
+  margin: auto;
+}
+
 .blogpost-content {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -268,6 +288,7 @@ div #hexagon {
   z-index: -1;
   transition: 0.15s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
 }
 
 .blogpost-content:hover .blogpost-image {
@@ -276,43 +297,28 @@ div #hexagon {
 
 .content-block {
   width: 100%;
-  height: 40%;
+  height: 35%;
   background-color: white;
   position: absolute;
-  bottom: 0;
   text-align: left;
-  padding: 20px;
-  margin: 0;
+  bottom: 0;
+  margin: auto;
   overflow: hidden;
+  padding: 10px;
 }
-
 .content-block-title {
-  color: rgb(45, 45, 45);
+  color: #1b2735;
+  font-weight: 700;
   text-transform: none;
-  font-size: 1rem;
+  font-size: 18px;
   margin: 0;
   padding-bottom: 10px;
+  font-family: Roboto;
+  text-transform: capitalize;
 }
-
 .content-block-description {
-  color: rgb(45, 45, 45);
+  color: #090a0f;
   text-transform: none;
-  font-size: 1rem;
-}
-
-.blogpost {
-  height: 100%;
-}
-
-ul.blogpost li {
-  width: 100%;
-  height: 100%;
-  /* overflow: hidden; */
-  padding-bottom: 20px;
-}
-
-.blog-post-date {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  font-size: 16px;
+  font-family: Ubuntu;
 }

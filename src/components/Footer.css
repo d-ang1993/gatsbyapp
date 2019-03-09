@@ -1,0 +1,50 @@
+footer {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(#1b2735 0%, #090a0f);
+  margin-top: 150px;
+  position: relative;
+  color: white;
+}
+
+.date-gatsby {
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(#1b2735 0%, #19232f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.date-gatsby p {
+  margin: auto;
+}
+
+.connect-footer {
+  height: 100%;
+  display: flex;
+}
+.connect-footer ul {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.connect-footer li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.connect-footer p {
+  padding-right: 5px;
+  display: inline-block;
+}
+
+.LinkedIn {
+
+}

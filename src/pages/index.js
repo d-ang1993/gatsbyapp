@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { graphql } from 'gatsby'
 import '../components/header.css'
 import Header from '../components/Header'
 import IndexContent from '../components/IndexContent'
+import BlogContent from '../components/BlogContent'
+import Footer from '../components/Footer'
 import '../components/index.css'
 import snowman from '../images/snowman.png'
 
@@ -39,17 +40,11 @@ const BlogPost = props => {
 
 const IndexPage = ({ data }) => (
   <div className="content-page">
-    <Header />
-    {/* <Layout> */}
+    <Layout>
+    {/* <Header /> */}
       <IndexContent snowman={snowman}/>
-      <div className="blog-content-div">
-        <ul className="blogpost">
-          {data.allContentfulBlogPost.edges.map((edge, id) => (
-            <BlogPost key={id} node={edge.node} key={id} id={id} />
-          ))}
-        </ul>
-      </div>
-    {/* </Layout> */}
+      <BlogContent data={data} id="portfolio"/>
+    </Layout>
   </div>
 )
 

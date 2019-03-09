@@ -35,7 +35,7 @@ class IndexContent extends React.Component {
   render() {
     // console.log(this.state.attribute)
     return (
-      <div className="text-content-div" id="portfolio">
+      <div className="text-content-div" id="about">
         <div className="container">
           <IndexTitle />
           <IndexAttributes attributesClick={this.attributesClick}/>

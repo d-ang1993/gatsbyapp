@@ -16,14 +16,6 @@ class BlogPostTemplate extends React.Component {
     this.componentDidMount = this.componentDidMount.bind(this)
   }
 
-  componentDidMount () {
-    window.onscroll = () => {
-      this.setState({
-        currentScrollHeight: window.scrollY
-      })
-    }
-    console.log(window.scrollY)
-  }
   render() {
     const { title, body } = this.props.data.contentfulBlogPost
     return (

@@ -1,7 +1,6 @@
 nav {
-
   /* color: white; */
-  background-color: #181818;
+  background-color: rgb(24, 24, 24, 0.5);
   z-index: 3;
   border-bottom: 1px solid rgb(255, 255, 255, 0.2);
   /* 1px solid #08fdd8 */
@@ -12,20 +11,13 @@ nav {
   bottom: 0;
 }
 
-.fixed {
+.nav-fixed {
   background-color: #181818;
   position: fixed;
   top: 0;
-  margin-bottom: 20px;
+
+  /* margin-bottom: 20px; */
 }
-
-
-/* .navbar-container {
-  height: 100%;
-  width: 100%;
-} */
-
-
 
 .navbar-logo-container {
   display: inline-block;
@@ -40,11 +32,16 @@ nav {
 div .navbar-logo-container h1 {
   font-size: 18px;
   margin: 0;
-  color:  #FFF;
+  color: #fff;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding-left: 40px;
+  transition: 0.5s;
+}
+
+.navbar-logo-container h1:hover {
+  color: #08fdd8;
 }
 
 .navbar-item-container {
@@ -65,12 +62,15 @@ nav .navbar-item-container ul {
 nav .navbar-item-container ul li {
   display: inline-block;
   border-bottom: 0px solid #08fdd8;
-  color: #FFF;
+  color: #fff;
   padding: 0 20px;
   margin: 0;
   transition: all 0.5s;
   overflow: hidden;
-
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: Ubuntu;
+  font-size: 1em;
 }
 
 nav .navbar-item-container ul li:hover {

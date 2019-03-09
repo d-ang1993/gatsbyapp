@@ -4,9 +4,8 @@ import { Link } from 'gatsby'
 // import yeeti from '../images/yeeti.png'
 
 class Nav extends React.Component {
-
   render() {
-    const { top, scroll } = this.props
+    const { top, scroll, home, about, portfolio, contact } = this.props
 
     // let className='navbar';
     // if (fixedNav === true) {
@@ -17,7 +16,7 @@ class Nav extends React.Component {
     // console.log(className)
 
     return (
-      <nav className={scroll > top ? "fixed" : ""}>
+      <nav className={scroll > top ? 'nav-fixed' : ''}>
         <div className="navbar-logo-container">
           <Link to="/">
             <h1>Yeeti</h1>
@@ -25,15 +24,9 @@ class Nav extends React.Component {
         </div>
         <div className="navbar-item-container">
           <ul>
-            {/* <Link to="/"> */}
-            <li onClick={this.handleScroll}>Home</li>
-            {/* </Link> */}
-            <Link to="/about/">
-              <li>About</li>
-            </Link>
-            <Link to="/contact/">
-              <li>Contact</li>
-            </Link>
+            <li onClick={home}>Home</li>
+            <li onClick={about}>About</li>
+            <li onClick={portfolio}>Portfolio</li>
           </ul>
         </div>
       </nav>
