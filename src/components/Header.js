@@ -81,7 +81,7 @@ class Header extends React.Component {
   }
 
   render() {
-    console.log(this.state.width)
+    // console.log(this.state.width)
     return (
       <div className="background-image" id="home">
         <Nav
@@ -109,8 +109,14 @@ class Header extends React.Component {
           </button> */}
         </div>
         <div className="arrow-container">
-          <div className="arrow bounce" onMouseOver={this.scrollViewAbout}>
-            <FaAngleDown size={100} color="#E31B6D" />
+          <div className="bounce-container">
+
+            <FaAngleDown
+              size={100}
+              color="#E31B6D"
+              className="arrow bounce"
+              onMouseOver={this.scrollViewAbout}
+            />
           </div>
         </div>
 

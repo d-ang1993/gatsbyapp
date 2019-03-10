@@ -10,7 +10,9 @@ import { GiMegabot } from "react-icons/gi";
 class Nav extends React.Component {
   render() {
     const { top, scroll, home, about, portfolio, contact, width, hover} = this.props
-
+    console.log(top)
+    console.log("this is scroll:")
+    console.log(scroll)
     // let className='navbar';
     // if (fixedNav === true) {
     //   className += ' fixed'

@@ -84,6 +84,13 @@ h2 .div-down {
   bottom: 10%;
   // background-color: red;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.bounce-container {
+  height: 100%;
+  width: 25%;
   text-align: center;
 }
 .arrow {
@@ -92,6 +99,11 @@ h2 .div-down {
   // border-left: 30px solid transparent;
   // border-right: 30px solid transparent;
   // border-top: 40px solid #E31B6D;
+  display: block;
+  // position: absolute;
+  height: 100px;
+  width: 100px;
+  margin: auto;
   animation: bounce 2s infinite;
 }
 
