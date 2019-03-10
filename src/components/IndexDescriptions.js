@@ -14,7 +14,6 @@ constructor(props){
   // }
 }
   render(){
-    console.log(typeof this.props.attribute)
     let description;
 
 {
@@ -27,7 +26,7 @@ constructor(props){
   } else if (this.props.attribute === "4") {
     return <IndexDescriptionSprout />
   } else {
-    return <IndexDescription />
+    return <IndexDescription width={this.props.width}/>
   }
 }
   return (

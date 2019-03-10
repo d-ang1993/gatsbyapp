@@ -1,11 +1,15 @@
 import React from 'react'
 import './Nav.css'
 import { Link } from 'gatsby'
-// import yeeti from '../images/yeeti.png'
+import { FaFortAwesome } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { FaObjectGroup } from "react-icons/fa";
+import { GiMegabot } from "react-icons/gi";
+
 
 class Nav extends React.Component {
   render() {
-    const { top, scroll, home, about, portfolio, contact } = this.props
+    const { top, scroll, home, about, portfolio, contact, width, hover} = this.props
 
     // let className='navbar';
     // if (fixedNav === true) {
@@ -24,9 +28,9 @@ class Nav extends React.Component {
         </div>
         <div className="navbar-item-container">
           <ul>
-            <li onClick={home}>Home</li>
-            <li onClick={about}>About</li>
-            <li onClick={portfolio}>Portfolio</li>
+            <li onClick={home}>{width < 1400 ? <FaFortAwesome size={20}/> : "Home"}</li>
+            <li onClick={about}>{width < 1400 ? <FaUser size={20}/> : "About"}</li>
+            <li onClick={portfolio}>{width < 1400 ? <FaObjectGroup size={20}/> : "portfolio"}</li>
           </ul>
         </div>
       </nav>

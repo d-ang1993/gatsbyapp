@@ -9,7 +9,9 @@ class Header extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+      hover: false,
+    }
   }
 
   handleScroll = e => {
@@ -40,6 +42,11 @@ class Header extends React.Component {
       height: nav.offsetHeight,
     })
     window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('resize', this.updateWindowDimensions)
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({ width: window.innerWidth })
   }
 
   componentDidUpdate = e => {
@@ -69,12 +76,13 @@ class Header extends React.Component {
     document.getElementById('contact').scrollIntoView()
   }
 
-  // scrollView = e => {
-  //   e.preventDefault()
-  //   document.getElementById('portfolio').scrollIntoView()
-  // }
+  toggleHover = e=>{
+    this.setState({hover: !this.state.hover})
+  }
+
 
   render() {
+    console.log(this.state.width)
     return (
       <div className="background-image" id="home">
         <Nav
@@ -84,6 +92,8 @@ class Header extends React.Component {
           about={this.scrollViewAbout}
           portfolio={this.scrollViewPortfolio}
           contact={this.scrollViewContact}
+          width={this.state.width}
+          hover={this.toggleHover}
         />
         <div className="navbar-slogan">
           <h1>

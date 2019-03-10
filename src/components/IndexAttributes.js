@@ -8,7 +8,12 @@ import cloud from '../images/cloud.png'
 
 class IndexAttributes extends React.Component {
   render() {
-    const { attributesClick } = this.props
+    let size;
+
+    if (width < 1016) {
+      console.log("yop")
+    }
+    const { attributesClick, width} = this.props
     return (
       <div className="container-attributes">
         <ul>
@@ -19,14 +24,14 @@ class IndexAttributes extends React.Component {
             <div className="container-icon-case">
               <MdCloud
                 className="attribute-case cloud1"
-                size={165}
+                size={width < 1016 ? 82.5 : 165}
                 color="#e31b6d"
                 data-id="1"
                 onClick={attributesClick}
               />
               <GiBlackBelt
                 className="attribute belt"
-                size={75}
+                size={width < 1016 ? 32.5 : 75}
                 color="white"
                 data-id="1"
                 onClick={attributesClick}
@@ -37,14 +42,14 @@ class IndexAttributes extends React.Component {
             <div className="container-icon-case">
               <MdCloud
                 className="attribute-case cloud2"
-                size={165}
+                size={width < 1016 ? 82.5 : 165}
                 color="#e31b6d"
                 data-id="2"
                 onClick={attributesClick}
               />
               <GiPumpkinMask
                 className="attribute scary"
-                size={80}
+                size={width < 1016 ? 32.5 : 75}
                 data-id="2"
                 onClick={attributesClick}
               />
@@ -54,14 +59,14 @@ class IndexAttributes extends React.Component {
             <div className="container-icon-case">
               <MdCloud
                 className="attribute-case"
-                size={165}
+                size={width < 1016 ? 82.5 : 165}
                 color="#e31b6d"
                 data-id="3"
                 onClick={attributesClick}
               />
               <IoIosBug
                 className="attribute"
-                size={80}
+                size={width < 1016 ? 32.5 : 75}
                 color="white"
                 data-id="3"
                 onClick={attributesClick}
@@ -73,14 +78,14 @@ class IndexAttributes extends React.Component {
             <div className="container-icon-case">
               <MdCloud
                 className="attribute-case"
-                size={165}
+                size={width < 1016 ? 82.5 : 165}
                 color="#e31b6d"
                 data-id="4"
                 onClick={attributesClick}
               />
               <GiGroundSprout
                 className="attribute"
-                size={80}
+                size={width < 1016 ? 32.5 : 75}
                 color="white"
                 data-id="4"
                 onClick={attributesClick}

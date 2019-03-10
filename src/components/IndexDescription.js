@@ -1,4 +1,5 @@
 import React from 'react';
+import IndexSkills from './IndexSkills'
 
 class IndexDescription extends React.Component {
   render(){
@@ -16,6 +17,9 @@ class IndexDescription extends React.Component {
           <span>concot</span> all sorts of <span>innovation</span> while adding
           my own personal touch.
         </p>
+        <IndexSkills width={this.props.width}/>
+
+
       </div>
     )
   }
