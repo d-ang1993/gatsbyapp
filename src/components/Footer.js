@@ -12,23 +12,27 @@ class Footer extends React.Component {
           <ul>
             <li>
               <div className="connect-footer-div">
-                <p>LinkedIn</p>
+                <div className="connect-footer-description">
+
+                <a href="https://www.linkedin.com/in/daniel-ang-90617716b/">LinkedIn</a>
                 <FaLinkedin className="LinkedIn" />
               </div>
-            </li>
-            <li>
-              <div className="connect-footer-div">
-                <p>Phone#: (905) 808-5205</p>
-                <FaGhost className="Ghost" />
               </div>
             </li>
             <li>
               <div className="connect-footer-div">
-                <p>GitHub</p>
+                <p className="phone-number">Phone#: (905) 808-5205</p>
+                <FaGhost className="ghost" />
+              </div>
+            </li>
+            <li>
+              <div className="connect-footer-div">
+                <a href="https://github.com/DangAsian">GitHub</a>
                 <DiGithubBadge className="GitHub" size={20} />
               </div>
             </li>
           </ul>
+          {/* <FaGhost className="running-ghost" /> */}
         </div>
         <div className="date-gatsby">
           <p>

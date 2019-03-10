@@ -2,15 +2,22 @@ footer {
   height: 200px;
   width: 100%;
   background: linear-gradient(#1b2735 0%, #090a0f);
-  margin-top: 150px;
+  /* margin-top: 150px; */
   position: relative;
   color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  padding-right: 5px;
+  transition: 0.5s ease-in-out;
 }
 
 .date-gatsby {
   position: absolute;
   width: 100%;
-  height: 55px;
+  height: 25%;
   bottom: 0;
   right: 0;
   background: linear-gradient(#1b2735 0%, #19232f);
@@ -24,7 +31,7 @@ footer {
 }
 
 .connect-footer {
-  height: 100%;
+  height: 75%;
   display: flex;
 }
 .connect-footer ul {
@@ -51,6 +58,47 @@ footer {
   margin: auto;
 }
 
-.Ghost {
-  size: 400px;
+.LinkedIn{
+  color: white;
+  transition: 0.5s ease-in-out;
 }
+.GitHub{
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.phone-number{
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.ghost{
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.connect-footer-div:hover .LinkedIn {
+  color: #08fdd8;
+}
+.connect-footer-div:hover .GitHub {
+  color: #08fdd8;
+}
+.connect-footer-div:hover .ghost {
+  color: #08fdd8;
+}
+.connect-footer-div:hover a {
+  color: #08fdd8;
+}
+.connect-footer-div:hover .phone-number {
+  color: #08fdd8;
+}
+
+/* .running-ghost {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 8s  ease-in-out;
+}
+
+.connect-footer:hover .running-ghost {
+  color: red;
+  transform:translateX(10000px);
+
+} */

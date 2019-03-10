@@ -30,9 +30,9 @@ class Nav extends React.Component {
         </div>
         <div className="navbar-item-container">
           <ul>
-            <li onClick={home}>{width < 1400 ? <FaFortAwesome size={20}/> : "Home"}</li>
-            <li onClick={about}>{width < 1400 ? <FaUser size={20}/> : "About"}</li>
-            <li onClick={portfolio}>{width < 1400 ? <FaObjectGroup size={20}/> : "portfolio"}</li>
+            <a href="#"><li onClick={home}>{width < 1400 ? <FaFortAwesome size={20}/> : "Home"}</li></a>
+            <a href="#"><li onClick={about}>{width < 1400 ? <FaUser size={20}/> : "About"}</li></a>
+            <a href="#"><li onClick={portfolio}>{width < 1400 ? <FaObjectGroup size={20}/> : "portfolio"}</li></a>
           </ul>
         </div>
       </nav>

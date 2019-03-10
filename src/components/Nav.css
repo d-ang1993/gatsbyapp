@@ -19,6 +19,7 @@ nav {
   width: 100%;
   margin: 0;
   left: 0;
+  z-index: 150;
 
   /* margin-bottom: 20px; */
 }
@@ -79,6 +80,22 @@ nav .navbar-item-container ul li {
   font-size: 1em;
 }
 
+nav .navbar-item-container ul a {
+  /* height: 100%; */
+  display: flex;
+  margin: auto;
+}
+
 nav .navbar-item-container ul li:hover {
   color: #08fdd8;
+}
+
+@media only screen and (max-width: 480px) {
+  nav .navbar-item-container ul li {
+
+    padding: 0 5px;
+
+  }
+
+
 }
