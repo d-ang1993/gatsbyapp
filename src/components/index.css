@@ -24,6 +24,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 2fr;
   margin-top: 30px;
+  padding-bottom: 200px;
 }
 
 .container-title {
@@ -45,6 +46,7 @@ html {
   width: 5%;
   border-bottom: 5px solid rgb(227, 27, 109, 0.9);
   margin: auto;
+  margin-bottom: 50px;
   transition: 0.5s;
 }
 .container-title .blog {
@@ -176,7 +178,7 @@ div #hexagon {
   grid-row-end: 4;
   text-align: center;
   width: 100%;
-  margin: auto;
+  margin-top: 50px;
   /* padding-left: 100px;
   padding-bottom: 24px; */
   height: 100%;

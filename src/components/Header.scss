@@ -77,15 +77,21 @@ h2 .div-down {
 // .header-button:hover{
 //   background-color: #E31B6D;
 // }
+.arrow-container {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 10%;
+  // background-color: red;
+  z-index: 100;
+  text-align: center;
+}
 .arrow {
   // width: 0;
   // height: 0;
   // border-left: 30px solid transparent;
   // border-right: 30px solid transparent;
   // border-top: 40px solid #E31B6D;
-  position: absolute;
-  bottom: 30px;
-  right: 47%;
   animation: bounce 2s infinite;
 }
 

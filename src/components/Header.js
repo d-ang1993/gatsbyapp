@@ -76,10 +76,9 @@ class Header extends React.Component {
     document.getElementById('contact').scrollIntoView()
   }
 
-  toggleHover = e=>{
-    this.setState({hover: !this.state.hover})
+  toggleHover = e => {
+    this.setState({ hover: !this.state.hover })
   }
-
 
   render() {
     console.log(this.state.width)
@@ -109,8 +108,10 @@ class Header extends React.Component {
             View More!
           </button> */}
         </div>
-        <div className="arrow bounce" onMouseOver={this.scrollViewAbout}>
-          <FaAngleDown size={100} color="#E31B6D" />
+        <div className="arrow-container">
+          <div className="arrow bounce" onMouseOver={this.scrollViewAbout}>
+            <FaAngleDown size={100} color="#E31B6D" />
+          </div>
         </div>
 
         <div className="move">
