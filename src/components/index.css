@@ -25,6 +25,7 @@ html {
   margin-top: 30px;
 }
 
+
 .container-title {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -86,7 +87,7 @@ html {
   padding-bottom: 20px;
   text-align: center;
   margin: 0;
-  height: 100%;
+  height: 165px;
   position: relative;
 }
 
@@ -143,7 +144,7 @@ div #hexagon {
 
 .attribute {
   position: absolute;
-  bottom: 50px;
+
 }
 
 .container-attributes-belt {
@@ -176,10 +177,12 @@ div #hexagon {
   grid-row-start: 3;
   grid-row-end: 4;
   text-align: center;
-  width: 65%;
+  width: 100%;
   margin: auto;
-  padding-left: 100px;
-  padding-bottom: 24px;
+  /* padding-left: 100px;
+  padding-bottom: 24px; */
+  height:100%;
+  white-space: pre-line;
   /* background-color: yellow; */
 }
 
@@ -234,6 +237,7 @@ div #hexagon {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   text-align: center;
+  height: 100%;
   /* padding-bottom: 20px; */
 }
 
@@ -247,6 +251,7 @@ div #hexagon {
 
 .skill-stack-content {
   margin: 0 auto;
+  height: 80px;
 }
 .skill-stack h1 {
   font-size: 1.5em;
@@ -256,7 +261,7 @@ div #hexagon {
 /* Start of Blog section!!!! */
 
 .blog-content-div {
-  display: block;
+  /* display: block; */
   width: 75%;
   height: 100vh;
   margin: 0 auto;
