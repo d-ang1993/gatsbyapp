@@ -15,9 +15,13 @@ nav {
   background-color: #181818;
   position: fixed;
   top: 0;
+  width: 100%;
+  margin: 0;
 
   /* margin-bottom: 20px; */
 }
+
+
 
 .navbar-logo-container {
   display: inline-block;
@@ -26,7 +30,7 @@ nav {
   height: 100%;
   margin: 0;
   padding: 0;
-  width: 75%;
+  width: 70%;
 }
 
 div .navbar-logo-container h1 {
@@ -48,7 +52,7 @@ div .navbar-logo-container h1 {
   display: inline-block;
   position: relative;
   /* border-left: 1px solid rgb(255, 255, 255, 0.2); */
-  width: 25%;
+  width: 30%;
   height: 100%;
 }
 
@@ -63,7 +67,7 @@ nav .navbar-item-container ul li {
   display: inline-block;
   border-bottom: 0px solid #08fdd8;
   color: #fff;
-  padding: 0 20px;
+  padding: 0 15px;
   margin: 0;
   transition: all 0.5s;
   overflow: hidden;
