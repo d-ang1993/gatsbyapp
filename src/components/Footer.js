@@ -14,7 +14,7 @@ class Footer extends React.Component {
               <div className="connect-footer-div">
                 <div className="connect-footer-description">
 
-                <a href="https://www.linkedin.com/in/daniel-ang-90617716b/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/daniel-ang-90617716b/" className="a-link">LinkedIn</a>
                 <FaLinkedin className="LinkedIn" />
               </div>
               </div>
@@ -27,7 +27,7 @@ class Footer extends React.Component {
             </li>
             <li>
               <div className="connect-footer-div">
-                <a href="https://github.com/DangAsian">GitHub</a>
+                <a href="https://github.com/DangAsian" className="a-link">GitHub</a>
                 <DiGithubBadge className="GitHub" size={20} />
               </div>
             </li>
@@ -37,7 +37,7 @@ class Footer extends React.Component {
         <div className="date-gatsby">
           <p>
             © {new Date().getFullYear()}, Built with{' '}
-            <a href="https://www.gatsbyjs.org"> Gatsby</a> by Daniel Ang
+            <a href="https://www.gatsbyjs.org" className="a-link"> Gatsby</a> by Daniel Ang
           </p>
         </div>
       </footer>

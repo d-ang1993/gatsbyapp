@@ -20,7 +20,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle="Daniel" />
         <div className="layout_header">
           {children}
         <Footer/>

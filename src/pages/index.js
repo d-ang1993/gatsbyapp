@@ -42,14 +42,14 @@ const BlogPost = props => {
 
 const IndexPage = ({ data }) => (
   <Layout>
-  <div className="content-page">
-    {/* <Header /> */}
+    <Header />
+      <div className="content-page">
       <IndexContent snowman={snowman}/>
       <div className="blog-content-div" id="portfolio">
         <BlogTitle/>
         <ul className="blog-post">
           {data.allContentfulBlogPost.edges.map((edge, id) => (
-            <BlogPost key={id} node={edge.node} key={id} id={id} />
+            <BlogPost node={edge.node} key={id} id={id} />
           ))}
         </ul>
       </div>
@@ -75,7 +75,7 @@ export const pageQuery = graphql`
             }
           }
           heroImage {
-            resize(width: 300, height: 300) {
+            resize(width: 800, height: 600) {
               src
             }
           }

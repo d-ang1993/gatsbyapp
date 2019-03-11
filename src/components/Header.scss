@@ -125,13 +125,13 @@ span {
   height: 1px;
   background: transparent;
   box-shadow: 5px 10px #fff;
-  // animation: animStar 50s linear infinite;
+  animation: animStar 50s linear infinite;
   box-shadow: $shadow-small;
 }
 
-.background-image:hover .stars {
-  animation: animStar 50s ease-out;
-}
+// .background-image:hover .stars {
+//   animation: animStar 50s ease-out;
+// }
 
 .stars:after {
   content: '';
@@ -148,13 +148,13 @@ span {
   height: 2px;
   background: transparent;
   box-shadow: 5px 10px #fff;
-  // animation: animStar 50s ease-out infinite;
+  animation: animStar 50s ease-out infinite;
   box-shadow: $shadow-medium;
 }
 
-.background-image:hover .stars2 {
-  animation: animStar 50s ease-out;
-}
+// .background-image:hover .stars2 {
+//   animation: animStar 50s ease-out;
+// }
 
 .stars2:after {
   content: '';
@@ -171,13 +171,13 @@ span {
   height: 3px;
   background: transparent;
   box-shadow: 5px 10px #fff;
-  // animation: animStar 50s ease-out infinite;
+  animation: animStar 50s ease-out infinite;
   box-shadow: $shadow-large;
 }
 
-.background-image:hover .stars3 {
-  animation: animStar 50s ease-out;
-}
+// .background-image:hover .stars3 {
+//   animation: animStar 50s ease-out;
+// }
 
 .stars3:after {
   content: '';
@@ -194,6 +194,6 @@ span {
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-2000px);
+    transform: translateY(2000px);
   }
 }
