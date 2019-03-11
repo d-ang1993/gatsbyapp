@@ -1,7 +1,7 @@
 
 nav {
   /* color: white; */
-  background-color: rgb(24, 24, 24, 0.5);
+  background-color: rgb(21, 32, 47);
   z-index: 3;
   border-bottom: 1px solid rgb(255, 255, 255, 0.2);
   /* 1px solid #08fdd8 */
@@ -24,7 +24,9 @@ nav {
   /* margin-bottom: 20px; */
 }
 
-
+.blog-nav{
+  position: fixed;
+}
 
 .navbar-logo-container {
   display: inline-block;
@@ -89,6 +91,7 @@ nav .navbar-item-container ul a {
 nav .navbar-item-container ul li:hover {
   color: #08fdd8;
 }
+
 
 @media only screen and (max-width: 480px) {
   nav .navbar-item-container ul li {

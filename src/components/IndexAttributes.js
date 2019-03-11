@@ -24,6 +24,7 @@ class IndexAttributes extends React.Component {
             <img src={cloud} className="cloud"/>
           </li> */}
           <li className="container-attributes-sprout">
+            {/* <a href="#"> */}
             <div className="container-icon-case">
               <MdCloud
                 className="attribute-case cloud1"
@@ -40,6 +41,7 @@ class IndexAttributes extends React.Component {
                 onClick={attributesClick}
               />
             </div>
+          {/* </a> */}
           </li>
           <li className="container-attributes-scary">
             <div className="container-icon-case">

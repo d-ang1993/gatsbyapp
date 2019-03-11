@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import Nav from '../components/Nav'
+import NavBlogPost from '../components/NavBlogPost'
 import Image from '../components/image'
 import Header from '../components/Header'
 import './blog-post.css'
@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
     // console.log(heroImage.fluid.tracedSVG)
     return (
       <Layout>
-        <Nav />
+        <NavBlogPost className="nav-blog-post"/>
         <Helmet title={title} />
         <div className="wrapper">
           <div className="hero">
