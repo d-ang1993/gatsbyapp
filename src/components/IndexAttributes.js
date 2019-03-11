@@ -1,5 +1,6 @@
 import React from 'react'
 import { GiBlackBelt } from 'react-icons/gi'
+import { GiHighKick } from 'react-icons/gi'
 import { IoIosBug } from 'react-icons/io'
 import { MdCloud } from 'react-icons/md'
 import { GiPumpkinMask } from 'react-icons/gi'
@@ -9,18 +10,20 @@ import cloud from '../images/cloud.png'
 class IndexAttributes extends React.Component {
   render() {
     let size;
+    // console.log(this.props)
+    const { attributesClick, width, attribute, highlight} = this.props
+    // let highlightedAttribute;
 
-    if (width < 1016) {
-      console.log("yop")
-    }
-    const { attributesClick, width} = this.props
+
+    console.log(highlight)
+
     return (
       <div className="container-attributes">
         <ul>
           {/* <li>
             <img src={cloud} className="cloud"/>
           </li> */}
-          <li className="container-attributes-belt">
+          <li className="container-attributes-sprout">
             <div className="container-icon-case">
               <MdCloud
                 className="attribute-case cloud1"
@@ -29,11 +32,11 @@ class IndexAttributes extends React.Component {
                 data-id="1"
                 onClick={attributesClick}
               />
-              <GiBlackBelt
-                className="attribute belt"
+              <GiGroundSprout
+                className={attribute === "1" || highlight === false ? "attribute highlight-sprout" : "attribute sprout"}
                 size={width < 1030 ? 32.5 : 75}
-                color="white"
                 data-id="1"
+                // color={attribute === "1" || highlight === false ? "black" : "white"}
                 onClick={attributesClick}
               />
             </div>
@@ -48,14 +51,15 @@ class IndexAttributes extends React.Component {
                 onClick={attributesClick}
               />
               <GiPumpkinMask
-                className="attribute scary"
+                className={attribute === "2" ? "attribute highlight-scary" : "attribute scary"}
                 size={width < 1030 ? 32.5 : 75}
+                // color={attribute === "2" ? "orange" : "white"}
                 data-id="2"
                 onClick={attributesClick}
               />
             </div>
           </li>
-          <li>
+          <li className="container-attributes-bug">
             <div className="container-icon-case">
               <MdCloud
                 className="attribute-case"
@@ -65,16 +69,16 @@ class IndexAttributes extends React.Component {
                 onClick={attributesClick}
               />
               <IoIosBug
-                className="attribute"
+                className={attribute === "3" ? "attribute highlight-bug" : "attribute bug"}
                 size={width < 1030 ? 32.5 : 75}
-                color="white"
+                // color={attribute === "3" ? "black" : "white"}
                 data-id="3"
                 onClick={attributesClick}
               />
             </div>
           </li>
 
-          <li>
+          <li className="container-attributes-belt">
             <div className="container-icon-case">
               <MdCloud
                 className="attribute-case"
@@ -83,10 +87,10 @@ class IndexAttributes extends React.Component {
                 data-id="4"
                 onClick={attributesClick}
               />
-              <GiGroundSprout
-                className="attribute"
+              <GiHighKick
+                className={attribute === "4" ? "attribute highlight-belt" : "attribute belt"}
                 size={width < 1030 ? 32.5 : 75}
-                color="white"
+                // color={attribute === "4" ? "black" : "white"}
                 data-id="4"
                 onClick={attributesClick}
               />

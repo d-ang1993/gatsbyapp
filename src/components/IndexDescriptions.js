@@ -18,7 +18,7 @@ constructor(props){
 
 {
   if (this.props.attribute === "1") {
-    return <IndexDescriptionTKD />
+    return <IndexDescription width={this.props.width}/>
   } else if (this.props.attribute === "2") {
     return <IndexDescriptionScary />
   } else if (this.props.attribute === "3") {

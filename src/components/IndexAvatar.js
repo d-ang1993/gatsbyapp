@@ -10,7 +10,7 @@ class IndexAvatar extends React.Component {
 
   render() {
     const { img, width, open, boxOpenClose} = this.props
-  
+
     return (
     <div className="box-image">
       <div className="box-component">
@@ -18,7 +18,7 @@ class IndexAvatar extends React.Component {
 
             <div>
               { width > 1400 ? <FaUserAstronaut
-                size={200}
+                size={300}
                 className="box-content"
                 onClick={boxOpenClose}
               /> : null }

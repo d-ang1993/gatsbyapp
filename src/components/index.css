@@ -33,11 +33,12 @@ html {
   grid-row-start: 1;
   grid-row-end: 2;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 80px;
   color: #090a0f;
   text-transform: uppercase;
   /* background-color: red; */
 }
+
 .container-title h1 {
   margin-top: 50px;
 }
@@ -129,6 +130,7 @@ div #hexagon {
 
 /* CLOUD SHAPE https://react-icons.netlify.com/#/icons/gi */
 /* The icons from this website only accepts a fixed size ~ */
+/* Therefore the height was prefixed and the icons are 100% of that size ~ */
 
 .container-icon-case {
   height: 100%;
@@ -160,13 +162,54 @@ div #hexagon {
   width: 100%;
 }
 
+/*EACH ICON IS WHITE AND HAS TRANSISITION */
 .scary {
   color: white;
-  transition: 1s ease;
+  transition: 0.5s ease-in-out;
 }
 
+.bug {
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.sprout {
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.belt {
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+/*HOVER PROPERTY DESCRIBED FOR EACH TRANSISITION */
+
+.container-attributes-sprout:hover .sprout {
+  color: #1be391;
+}
 .container-attributes-scary:hover .scary {
-  color: #e67e22;
+  color: #1be391;
+}
+.container-attributes-bug:hover .bug {
+  color: #1be391;
+}
+.container-attributes-belt:hover .belt {
+  color: #1be391;
+}
+
+/*HIGHLIGHT COLOR OF EACH ICON AFTER BEING CLICKED */
+.highlight-sprout {
+  color: #1be391;
+}
+.highlight-scary {
+  color: #1be391;
+}
+.highlight-bug {
+  color: #1be391;
+}
+.highlight-belt {
+  color: #1be391;
 }
 
 /*Container that holds a description about me ;) keke */
@@ -178,7 +221,8 @@ div #hexagon {
   grid-row-end: 4;
   text-align: center;
   width: 100%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+
 
   /* padding-left: 100px;
   padding-bottom: 24px; */
@@ -206,10 +250,14 @@ div #hexagon {
   line-height: 1.4;
 }
 
+.description-content {
+
+}
+
 /*box-image altering** here and in Box.css*/
 
 .box-image {
-  margin: auto 0;
+  /* margin: auto 0; */
 }
 
 .box-component {

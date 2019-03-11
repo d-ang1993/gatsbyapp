@@ -12,7 +12,7 @@ class IndexContent extends React.Component {
     this.state = {
       attribute: '',
       open: false,
-      color: false,
+      highlight: false,
       width: ''
     }
 
@@ -33,8 +33,22 @@ class IndexContent extends React.Component {
 
     this.setState({
       attribute: target,
-      color: true,
+      highlight: true,
     })
+  }
+
+  highlightClick = (e) => {
+    // console.log(this.state.highlight)
+    if (this.state.highlight === false) {
+      this.setState({
+        highlight: true,
+      })
+    } else {
+      this.setState({
+        highlight: false,
+      })
+    }
+    // console.log(this.state.highlight)
   }
 
   boxOpenClose = e => {
@@ -53,12 +67,12 @@ class IndexContent extends React.Component {
   }
 
   render() {
-    console.log(this.state.width)
+    // console.log(this.state.highlight)
     return (
       <div className="text-content-div" id="about">
         <div className="container">
           <IndexTitle />
-          <IndexAttributes attributesClick={this.attributesClick} width={this.state.width} />
+          <IndexAttributes attributesClick={this.attributesClick} highlight={this.state.highlight} width={this.state.width} attribute={this.state.attribute}  />
           <IndexDescriptions attribute={this.state.attribute} width={this.state.width}/>
           <IndexAvatar img={this.props.snowman} boxOpenClose={this.boxOpenClose} width={this.state.width} open={this.state.open}/>
           {/* <IndexSkills /> */}
