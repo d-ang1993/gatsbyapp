@@ -24,7 +24,7 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 2fr;
   margin-top: 30px;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
 }
 
 .container-title {
@@ -223,7 +223,6 @@ div #hexagon {
   width: 100%;
   /* margin-top: 20px; */
 
-
   /* padding-left: 100px;
   padding-bottom: 24px; */
   height: 100%;
@@ -251,7 +250,6 @@ div #hexagon {
 }
 
 .description-content {
-
 }
 
 /*box-image altering** here and in Box.css*/
@@ -400,6 +398,10 @@ ul .blog-post {
 @media only screen and (max-width: 1030px) {
   .text-content-div {
     max-width: 90%;
+  }
+
+  html {
+    font-size: 100%;
   }
 
   .container {
