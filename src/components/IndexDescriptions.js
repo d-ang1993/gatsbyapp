@@ -24,7 +24,7 @@ constructor(props){
   } else if (this.props.attribute === "3") {
     return <IndexDescriptionBug />
   } else if (this.props.attribute === "4") {
-    return <IndexDescriptionSprout />
+    return <IndexDescriptionTKD />
   } else {
     return <IndexDescription width={this.props.width}/>
   }

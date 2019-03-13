@@ -22,7 +22,7 @@ html {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr;
   margin-top: 30px;
   /* padding-bottom: 200px; */
 }
@@ -58,7 +58,7 @@ html {
 }
 
 #blog-container-title {
-  margin-top: 50px;
+  margin-top: 80px;
   padding-top: 35px;
 }
 
@@ -76,6 +76,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   /* background-color: blue; */
 }
 .container-attributes ul {
@@ -170,17 +171,17 @@ div #hexagon {
 
 .bug {
   color: white;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .sprout {
   color: white;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .belt {
   color: white;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 /*HOVER PROPERTY DESCRIBED FOR EACH TRANSISITION */
@@ -239,6 +240,7 @@ div #hexagon {
 .container-description-content h2 {
   color: #090a0f;
   font-size: 2em;
+  margin: 50px 0;
 }
 
 .container-description-content p {
@@ -249,13 +251,18 @@ div #hexagon {
   line-height: 1.4;
 }
 
+.pursuit-logo {
+  height: 150px;
+  width: 150px;
+}
+
 .description-content {
 }
 
 /*box-image altering** here and in Box.css*/
 
 .box-image {
-  /* margin: auto 0; */
+  margin: auto 0;
 }
 
 .box-component {
@@ -324,6 +331,7 @@ ul .blog-post {
   display: inline-block;
   padding: 20px;
 }
+
 .blogpost-container li {
   list-style-type: none;
   display: block;
@@ -389,9 +397,6 @@ ul .blog-post {
   .container-description-content {
     grid-column-start: 1;
     grid-column-end: 4;
-  }
-  .scary {
-    color: lightblue;
   }
 }
 

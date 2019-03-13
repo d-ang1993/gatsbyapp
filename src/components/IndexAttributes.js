@@ -2,6 +2,7 @@ import React from 'react'
 import { GiBlackBelt } from 'react-icons/gi'
 import { GiHighKick } from 'react-icons/gi'
 import { IoIosBug } from 'react-icons/io'
+import { DiCode } from "react-icons/di";
 import { MdCloud } from 'react-icons/md'
 import { GiPumpkinMask } from 'react-icons/gi'
 import { GiGroundSprout } from 'react-icons/gi'
@@ -33,7 +34,7 @@ class IndexAttributes extends React.Component {
                 data-id="1"
                 onClick={attributesClick}
               />
-              <GiGroundSprout
+              <DiCode
                 className={attribute === "1" || highlight === false ? "attribute highlight-sprout" : "attribute sprout"}
                 size={width < 1030 ? 32.5 : 75}
                 data-id="1"
