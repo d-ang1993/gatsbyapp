@@ -16,8 +16,6 @@ class IndexAttributes extends React.Component {
     // let highlightedAttribute;
 
 
-    console.log(highlight)
-
     return (
       <div className="container-attributes">
         <ul>

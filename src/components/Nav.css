@@ -82,10 +82,12 @@ nav .navbar-item-container ul li {
   font-size: 1em;
 }
 
+
 nav .navbar-item-container ul a {
   /* height: 100%; */
   display: flex;
   margin: auto;
+  text-decoration: none;
 }
 
 nav .navbar-item-container ul li:hover {
