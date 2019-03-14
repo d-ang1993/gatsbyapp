@@ -38,7 +38,7 @@ nav {
   width: 70%;
 }
 
-div .navbar-logo-container h1 {
+div .navbar-logo-container h2 {
   font-size: 18px;
   margin: 0;
   color: #fff;
@@ -47,6 +47,7 @@ div .navbar-logo-container h1 {
   transform: translateY(-50%);
   padding-left: 40px;
   transition: 0.5s;
+  text-transform: uppercase;
 }
 
 .navbar-logo-container h1:hover {
@@ -68,7 +69,7 @@ nav .navbar-item-container ul {
   justify-content: center;
 }
 
-nav .navbar-item-container ul li {
+nav .navbar-item-container ul li a {
   display: inline-block;
   border-bottom: 0px solid #08fdd8;
   color: #fff;
@@ -78,19 +79,19 @@ nav .navbar-item-container ul li {
   overflow: hidden;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: Ubuntu;
   font-size: 1em;
+  text-decoration: none;
 }
 
 
-nav .navbar-item-container ul a {
+nav .navbar-item-container ul li {
   /* height: 100%; */
   display: flex;
   margin: auto;
   text-decoration: none;
 }
 
-nav .navbar-item-container ul li:hover {
+nav .navbar-item-container ul li a:hover {
   color: #08fdd8;
 }
 

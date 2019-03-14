@@ -17,9 +17,9 @@ import SEO from '../components/seo'
 
 const BlogPost = props => {
   return (
-    <div className="blogpost-container">
+    <li className="blogpost-container">
       <Link to={props.node.slug}>
-        <li>
+
           <div className="blogpost-content">
             <img
               className="blogpost-image"
@@ -34,9 +34,9 @@ const BlogPost = props => {
               {/* <div className="blog-post-date"> {props.node.publishDate} </div> */}
             </div>
           </div>
-        </li>
+  
       </Link>
-    </div>
+    </li>
   )
 }
 

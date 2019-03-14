@@ -96,13 +96,12 @@ class Header extends React.Component {
         />
         <div className="navbar-slogan">
           <h1>
-            <h1>
-              Hey! My name is <span>Daniel</span>!
-            </h1>
-            <h2>
-              Ever <span>wondered</span>... What my <span>portfolio</span> looks like?
-            </h2>
+            Hey! My name is <span>Daniel</span>!
           </h1>
+          <h2>
+            Ever <span>wondered</span>... What my <span>portfolio</span> looks
+            like?
+          </h2>
 
           {/* <button className="header-button" onClick={this.scrollView}>
             View More!
@@ -110,7 +109,6 @@ class Header extends React.Component {
         </div>
         <div className="arrow-container">
           <div className="bounce-container">
-
             <FaAngleDown
               size={100}
               color="#E31B6D"

@@ -3,8 +3,11 @@ footer {
   width: 100%;
   background: linear-gradient(#1b2735 0%, #090a0f);
   /* margin-top: 150px; */
+  bottom: 0;
+  left: 0;
   position: relative;
   color: white;
+  overflow: hidden;
 }
 
 .a-link{
