@@ -88,7 +88,7 @@ class IndexAttributes extends React.Component {
                 data-id="4"
                 onClick={attributesClick}
               />
-              <GiHighKick
+              <GiBlackBelt
                 className={attribute === "4" ? "attribute highlight-belt" : "attribute belt"}
                 size={width < 1030 ? 32.5 : 75}
                 // color={attribute === "4" ? "black" : "white"}
