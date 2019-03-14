@@ -14,7 +14,7 @@ class NavBlogPost extends React.Component {
       <nav className= "blog-nav">
         <div className="navbar-logo-container">
           <Link to="/">
-            <h1>Back</h1>
+            <h2>Back</h2>
           </Link>
         </div>
       </nav>
