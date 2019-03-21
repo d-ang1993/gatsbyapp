@@ -28,13 +28,13 @@ const BlogPost = props => {
             />
             <div className="content-block">
               <p className="content-block-title">{props.node.title}</p>
-              <p className="content-block-description">
-                {props.node.body.childMarkdownRemark.excerpt}
-              </p>
+              <div className="content-block-description">
+                <p>{props.node.body.childMarkdownRemark.excerpt}</p>
+              </div>
               {/* <div className="blog-post-date"> {props.node.publishDate} </div> */}
             </div>
           </div>
-  
+
       </Link>
     </li>
   )

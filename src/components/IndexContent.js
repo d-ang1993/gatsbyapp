@@ -23,6 +23,7 @@ class IndexContent extends React.Component {
     this.updateWindowDimensions()
     window.addEventListener('resize', this.updateWindowDimensions)
   }
+
   updateWindowDimensions = () => {
     this.setState({ width: window.innerWidth })
   }

@@ -16,14 +16,13 @@ class IndexDescription extends React.Component {
             working in <span>oncology research</span>. I aspire to{' '}
             <span>concot</span> all sorts of <span>innovation</span> while
             adding my own personal touch. */}
-            I’m just your <span>typical snowman making guy</span> who has
-            recently found his <span>creativity</span> in building and
+            I'm somebody who loves the unknown and the fun that comes out of exploring it.
+            Recently I found my <span>creativity</span> in building and
             understanding the functionality of websites. Being a{' '}
-            <span>Web Developer</span> involves utilizing your{' '}
-            <span>imagination</span>, <span>curiosity</span>, and{' '}
+            <span>Web Developer</span> I strive to utilize my
+             <span> imagination</span>, <span>curiosity</span>, and{' '}
             <span>inclusiveness</span> throughout all stages, from
-            conceptualizing an idea all the way to the implementation of the
-            product. I find this <span>whole process inspiring</span> and I’m eager to learn
+            conceptualizing unil implementation of a idea. I find this <span>whole process inspiring</span> and I’m eager to learn
             more <span>everyday</span>.
           </p>
         </div>
