@@ -16,23 +16,7 @@ class Header extends React.Component {
 
   handleScroll = e => {
     this.setState({ scroll: window.scrollY })
-    // e.preventDefault()
-    // const nav = document.querySelector('nav')
-    //
-    // const navTop = nav.offsetTop
-    // console.log(navTop)
-    // console.log(window.scrollY)
 
-    // if (window.scrollY >= navTop) {
-    //   this.setState({
-    //     fixedNav: true,
-    //     scroll: window.scrollY
-    //   })
-    // } else if (window.scrollY < navTop){
-    //   this.setState({
-    //     fixedNav: false
-    //   })
-    // }
   }
 
   componentDidMount = e => {
@@ -96,16 +80,12 @@ class Header extends React.Component {
         />
         <div className="navbar-slogan">
           <h1>
-            Hey! My name is <span>Daniel</span>!
+            Hello! My name is <span>Daniel</span>!
           </h1>
-          <h2>
-            Ever <span>wondered</span>... What my <span>portfolio</span> looks
-            like?
-          </h2>
+          <h3>
+             This is my personal website. Be adventerous when <span>clicking</span>!
 
-          {/* <button className="header-button" onClick={this.scrollView}>
-            View More!
-          </button> */}
+          </h3>
         </div>
         <div className="arrow-container">
           <div className="bounce-container">

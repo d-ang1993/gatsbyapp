@@ -10,7 +10,6 @@ import BlogTitle from '../components/BlogTitle'
 import '../components/index.css'
 import snowman from '../images/snowman.png'
 
-
 // import BlogPost from './page-2'
 
 import SEO from '../components/seo'
@@ -19,22 +18,22 @@ const BlogPost = props => {
   return (
     <li className="blogpost-container">
       <Link to={props.node.slug}>
-
-          <div className="blogpost-content">
-            <img
-              className="blogpost-image"
-              src={props.node.heroImage.resize.src}
-              alt="double it!"
-            />
-            <div className="content-block">
-              <p className="content-block-title">{props.node.title}</p>
-              <div className="content-block-description">
-                <p>{props.node.body.childMarkdownRemark.excerpt}</p>
-              </div>
-              {/* <div className="blog-post-date"> {props.node.publishDate} </div> */}
+        <div className="blogpost-content">
+          <img
+            className="blogpost-image"
+            src={props.node.heroImage.resize.src}
+            alt="double it!"
+          />
+          <div className="content-block">
+            <div className="content-block-title">
+              <p>{props.node.title}</p>
             </div>
+            <div className="content-block-description">
+              <p>{props.node.body.childMarkdownRemark.excerpt}</p>
+            </div>
+            {/* <div className="blog-post-date"> {props.node.publishDate} </div> */}
           </div>
-
+        </div>
       </Link>
     </li>
   )
@@ -43,18 +42,18 @@ const BlogPost = props => {
 const IndexPage = ({ data }) => (
   <Layout>
     <Header />
-      <div className="content-page">
-      <IndexContent snowman={snowman}/>
+    <div className="content-page">
+      <IndexContent snowman={snowman} />
       <div className="blog-content-div" id="portfolio">
-        <BlogTitle/>
+        <BlogTitle />
         <ul className="blog-post">
           {data.allContentfulBlogPost.edges.map((edge, id) => (
             <BlogPost node={edge.node} key={id} id={id} />
           ))}
         </ul>
       </div>
-  </div>
-</Layout>
+    </div>
+  </Layout>
 )
 
 export default IndexPage
